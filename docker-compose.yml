@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "9000:80"
+    volumes:
+      - ./public:/app/public
+      - ./config/docker.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - code-network
+  php:
+    build: .
+    networks:
+      - code-network
+
+networks:
+  code-network:
+    driver: bridge

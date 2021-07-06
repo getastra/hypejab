@@ -1,0 +1,10 @@
+{
+    "require": {
+        "slim/slim": "^4.8",
+        "slim/psr7": "^1.4",
+        "selective/basepath": "^2.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^195.0"
+    }
+}
