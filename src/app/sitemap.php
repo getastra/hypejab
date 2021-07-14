@@ -4,24 +4,6 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
-require __DIR__ . '/../vendor/autoload.php';
-
-$app = AppFactory::create();
-
-$app->addRoutingMiddleware();
-
-$app->get(
-  '/',
-  function (Request $request, Response $response, array $args) {
-      $response->getBody()->write(
-        "Welcome to HypeJab! 💉 😃 <br>"
-        . "HypeJab is a deliberately vulnerable web application"
-        . " intended for benchmarking automated scanners."
-      );
-      return $response;
-  }
-);
-
 $app->get(
   '/sitemap.xml',
   function (Request $request, Response $response, array $args) use ($app) {
@@ -50,23 +32,3 @@ $app->get(
       return $response->withHeader("content-type", "application/xml");
   }
 );
-
-$app->get(
-  '/host-header-injection/redirect',
-  function (Request $request, Response $response, array $args) {
-      return $response->withHeader('Location', "http://{$_SERVER['HTTP_HOST']}")
-                      ->withStatus(302);
-  }
-);
-
-$app->get(
-  '/host-header-injection/html-poisoning',
-  function (Request $request, Response $response, array $args) {
-      $response->getBody()->write(
-        "Click <a href = http://{$_SERVER['HTTP_HOST']}>here</a> for treats."
-      );
-      return $response;
-  }
-);
-
-$app->run();
