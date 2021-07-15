@@ -37,7 +37,7 @@ $app->get(
   '/',
   function (Request $request, Response $response, array $args) {
       $response->getBody()->write(
-        "Welcome to HypeJabdsadsa! 💉 😃 <br>"
+        "Welcome to HypeJab! 💉 😃 <br>"
         . "HypeJab is a deliberately vulnerable web application"
         . " intended for benchmarking automated scanners."
       );
