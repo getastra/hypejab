@@ -10,3 +10,7 @@ git clone https://github.com/ricekot/hypejab.git
 cd hypejab
 docker-compose up
 ```
+## Vulnerabilities
+
+- Host Header Injection
+- Apache Tomcat Ghostcat CVE 2020-1938
