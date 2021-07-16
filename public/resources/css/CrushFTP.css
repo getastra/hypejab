@@ -1,0 +1,417 @@
+/*Login page*/
+body{
+    background:none repeat scroll 0 0 #D7D7D7;
+    font:12px/18px Arial,Verdana,sans-serif;
+}
+div#login {
+    margin:110px auto 0;
+    width:546px;
+}
+div#signup {
+    margin:110px auto 0;
+    width:700px;
+}
+div#signup #branding
+{
+    padding:10px 0px;
+    *padding:0px;
+    *margin:0px;
+}
+div#signup #panelSignup
+{
+    border-top: 1px solid #eee;
+    margin:10px 0px;
+    clear:both;
+    font-size: 12px;
+}
+div#panelbody, div#changepasswordPanel {
+    background-color:#fff;
+    padding:0px 10px 10px 10px;
+    border: 1px solid #eee;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 5px 5px #888;
+    -webkit-box-shadow: 2px 5px 5px #888;
+    -moz-box-shadow: 2px 5px 5px #888;
+}
+
+* html div#panelbody {
+    background-image:none;
+    *padding:0px;
+    *margin:0px;
+}
+div#login div#panelLogin div, div#login div#panelResetPass div, div#login div#panelChangePass div {
+    margin:0 auto;
+    padding-bottom:18px;
+    width:480px;
+    *padding:2px;
+}
+div#login div#branding {
+    padding-top:20px;
+    *padding:0px;
+    *margin:-4px;
+}
+div#login div#branding img {
+    display:block;
+    *padding:0px;
+}
+
+#defaultLogoLink
+{
+    *padding:0px;
+}
+
+#imgLogo
+{
+    margin:0 0 20px 0;
+    *padding:0px;
+    *margin:10px 0px 0px 0px;
+}
+div#panelLogin, div#panelResetPass
+{
+    clear:both;
+    *padding:0px;
+    *margin:35px 0px 0px 0px;
+}
+div#login label, div#changepasswordPanel label {
+    color:#888888;
+    display:block;
+    font-size:12px;
+    *padding:0px;
+    *margin:0px;
+}
+div#login span.checkBoxListStyle label {
+    display:inline;
+}
+div#login input#txtLogin, div#login input#txtPassword, div#login input#txtEmailAddressResetPass, div#login input.textbox {
+    background:none repeat scroll 0 0 #FAFAFA;
+    border:1px solid #888;
+    font-size:18px;
+    line-height:20px;
+    margin:0;
+    padding:3px;
+    width:465px;
+}
+* html div#login input#txtLogin, * html div#login input#txtPassword, * html div#login input#txtEmailAddressResetPass, * html div#login input.textbox, input.textboxSmall {
+    background:none repeat scroll 0 0 #EEEEEE;
+    border:1px solid #DDDDDD;
+    font-size:18px;
+    line-height:20px;
+    margin:0;
+    padding:3px;
+    width:465px;
+}
+
+input.textboxSmall
+{
+    width:250px;
+    margin:3px;
+}
+
+div#login input#txtLogin:focus, div#login input#txtPassword:focus, div#login input.textbox:focus {
+    background:none repeat scroll 0 0 #FCFCFC;
+    border:1px solid #CCCCCC;
+}
+div#login div.submit p {
+    float:left;
+    margin:0;
+    *padding:0px;
+    *margin:0px;
+}
+div#login a:link, div#login a:visited {
+    color:#000;
+}
+div#login a:hover, div#login a:active {
+    color:#6C4848;
+}
+p.lostpassword {
+    left:8px;
+    margin:0;
+    position:relative;
+    top:-25px;
+    width:260px;
+}
+div#login p.lostpassword a {
+    color:#0066BC !important;
+    padding:0px;
+    margin:0px;
+}
+
+a.button {
+    color: #444;
+    display: block;
+    float: right;
+    font: bolder 12px arial, sans-serif;
+    height: 30px;
+    margin-right: 6px;
+    padding-right: 20px; /* sliding doors padding */
+    text-decoration: none;
+    background: rgb(248,248,248);
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px 0px #888;
+}
+
+a.button span {
+    display: block;
+    line-height: 30px;
+    padding: 0px 10px 0px 30px;
+    text-align:center;
+}
+#loginWheel
+{
+    float:right;
+}
+.error, .errorOverwrite
+{
+    color: #FF0000;
+    font-size: 11px;
+    text-align: left;
+}
+
+.requiredField
+{
+    font-size: 11px;
+    color: Red;
+    margin-left: 5px;
+}
+
+.validationFail
+{
+    border: 1px solid red;
+    padding:2px;
+}
+
+a.error:hover, a.errorOverwrite:hover
+{
+    color: #A8B35E;
+}
+
+.attention
+{
+    margin: 10px 0px 0px 0px;
+    text-align: left;
+    padding: 5px 5px 5px 23px;
+    background: url(/WebInterface/jQuery/images/exclamation.png) no-repeat 5px 4px;
+    color: #FF0404;
+    float: left;
+}
+
+.customForm tr td
+{
+    padding : 5px;
+}
+
+a.loginLink, a.loginLink:visited, a.loginLink:hover
+{
+    float:right;
+    margin:10px;
+    color: #0066BC !important;
+    margin: 0;
+    padding: 0;
+}
+div.blockMsg {
+    width:  250px;
+    border: 1px solid #ddd;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    top:100px;
+    padding: 50px;
+    color: #fff;
+}
+#topSwitchButtons ul
+{
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+    position:relative;
+}
+
+#topSwitchButtons li
+{
+    padding:5px 8px 5px 14px;
+    float:left;
+    margin:1px;
+}
+
+#recaptcha_area, #recaptcha_area div
+{
+    padding-bottom: 0px !important;
+}
+
+#languageSelector select {
+   background: transparent;
+   width: 100px;
+   padding: 5px;
+   font-size: 12px;
+   border: 1px solid #fff;
+    -webkit-appearance: none;
+}
+
+#languageSelector{
+    text-align: center;
+    width: 100px;
+    overflow: hidden;
+    position: fixed;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    height: inherit;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+    background: url(/WebInterface/Resources/images/down.gif) no-repeat 85% #fff;
+}
+
+.closeButton {
+    height: 16px;
+    width: 16px;
+    border: 0px;
+    float: right;
+    cursor: pointer;
+    margin-right: -12px;
+    margin-top: -13px;
+}
+.popupHeader {
+    background-color: #F1EEEE;
+    margin: 0px 0px 15px 0px;
+    font-size: 14px;
+    padding: 4px;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+}
+input[type=text], input[type=password]{
+    height: 26px;
+    padding-top: 0px;
+}
+#usePassword.used{
+    opacity: 0.6;
+}
+#usePassword.used .password-used{
+    display: inline-block !important;
+}
+.resetTitle{
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    color: #888;
+}
+.disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.accept-cookies{
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #3c3c3c;
+    transition: all .5s ease-in;
+    left: 0px;
+    color: #fff;
+}
+.accept-cookies a{
+    color: #fff;
+}
+.accept-cookies button{
+    padding: 5px 10px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #eee;
+    margin: 5px;
+    cursor: pointer;
+}
+.accept-cookies button.accept{
+    background-color: #627100;
+}
+.accept-cookies button.dismiss{
+    background-color: #8a0909;
+}
+.accept-cookies span.dismiss{
+    position: absolute;
+    right: 35px;
+    top: 2px;
+    font-size: 10px;
+    color: #ccc;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.accept-cookies button:hover{
+    background-color: #cccccc;
+    color: #000;
+}
+.accept-cookies.show{
+    bottom:0px;
+}
+.accept-cookies span{
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 16px;
+}
+#PrivacyPolicyText{
+    margin: 5px 10px;
+}
+
+.accept-cookies.accept-cookies-fixed {
+    position: relative;
+    top: -225px;
+    width: 500px;
+    left: 50%;
+    margin-left: -265px;
+}
+
+.accept-cookies.accept-cookies-fixed .dismiss{
+    display: none;
+}
+body.crushsync{
+    margin: 0px;
+    background: #fff;
+}
+body.crushsync #loginPageHeaderText{
+    display: none;
+}
+body.crushsync div#login{
+    margin: 0px;
+    width: 100%;
+}
+
+body.crushsync #panelbody{
+    border:0px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+body.crushsync .accept-cookies{
+    display: none !important;
+}
+
+body.crushsync .blockUI.blockMsg.blockPage {
+    bottom: 10px !important;
+    top: auto !important;
+    left: calc(50% - 175px);
+    transform: scale(0.7);
+    opacity: 0.7 !important;
+}
+
+body.crushsync div#login input#txtLogin, body.crushsync div#login input#txtPassword, body.crushsync div#login input#txtEmailAddressResetPass, body.crushsync div#login input.textbox{
+    width: 370px;
+}
+
+body.crushsync div#login div#panelLogin div, body.crushsync div#login div#panelResetPass div, body.crushsync div#login div#panelChangePass div{
+    width: 390px;
+}
