@@ -14,3 +14,4 @@ docker-compose up
 
 - Host Header Injection
 - Apache Tomcat Ghostcat CVE 2020-1938
+- Hidden File Sample
