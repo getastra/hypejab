@@ -1,6 +1,5 @@
 # HypeJab 💉
-> ricekot, July 2021 
----
+
 HypeJab is a deliberately vulnerable web application intended for benchmarking automated scanners.
 
 ## Running
