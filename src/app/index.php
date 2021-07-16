@@ -17,3 +17,13 @@ $app->get(
         return $response;
     }
 );
+
+$app->get(
+    '/favicon.ico',
+    function (Request $request, Response $response, array $args) {
+        return $response->withHeader(
+            'Location',
+            "/favicon.gif"
+        )->withStatus(302);
+    }
+);
