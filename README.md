@@ -16,3 +16,4 @@ docker-compose up
 - Apache Tomcat Ghostcat CVE 2020-1938
 - Hidden File Sample
 - JSP Samples Page
+- Exposed Panels - CrushFTP
