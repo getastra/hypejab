@@ -17,3 +17,4 @@ docker-compose up
 - JSP Samples Page
 - Exposed Panels - CrushFTP
 - Default Admin Login - Apache Axis2
+- Publicly accessible phpinfo & php configuration files
