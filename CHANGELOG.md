@@ -8,7 +8,17 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## Unreleased
 
 ### Added
-- Vulnerability: Host Header Injection
 - sitemap.xml
 - Dockerfile and docker-compose.yml
 - Procfile for deploying to heroku
+- Vulnerability: Host Header Injection
+- Vulnerability: Default Admin Login - Apache Axis2
+- Vulnerability: Apache Tomcat Ghostcat CVE 2020-1938
+- Vulnerability: Hidden File Sample
+- Vulnerability: JSP Samples Page
+- Vulnerability: Exposed Panels - CrushFTP
+- GIF Favicon
+
+### Changed
+- Restructure Project
+ 

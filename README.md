@@ -16,3 +16,4 @@ docker-compose up
 - Hidden File Sample
 - JSP Samples Page
 - Exposed Panels - CrushFTP
+- Default Admin Login - Apache Axis2
