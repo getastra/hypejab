@@ -17,5 +17,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Hidden File Sample
 - Vulnerability: JSP Samples Page
 - Vulnerability: Exposed Panels - CrushFTP
-- Restructure Project
 - GIF Favicon
+
+### Changed
+- Restructure Project
+ 
