@@ -31,7 +31,7 @@ $app->post(
         $_usname = $_body['userName'];
         $_pass = $_body['password'];
         
-        if(!empty($_usname && !empty($_pass))){
+        if(!empty($_usname) && !empty($_pass)){
             if($_usname == 'admin' && $_pass == 'axis2') {
                 $html = file_get_contents(__DIR__ . "/../resources/axis2/login.html");
                 $response->getBody()->write($html);
