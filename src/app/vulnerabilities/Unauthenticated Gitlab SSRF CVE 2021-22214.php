@@ -17,8 +17,6 @@ $app->post(
     '/api/v4/ci/lint',
     function (Request $request, Response $response, array $args) {
         $_body = $request->getBody();
-        $_obj = json_decode($_body, FALSE);
-        $_content = $_obj->content;
         
         if(!empty($_body)){
             $_obj = json_decode($_body, FALSE);
