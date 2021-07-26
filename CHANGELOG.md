@@ -19,6 +19,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Exposed Panels - CrushFTP
 - Vulnerability: Publicly accessible phpinfo & php configuration files
 - GIF Favicon
+- Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 
 ### Changed
 - Restructure Project

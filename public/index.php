@@ -16,5 +16,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Hidden File Sample.php';
 require __DIR__ . '/../src/app/vulnerabilities/JSP Samples Page.php';
 require __DIR__ . '/../src/app/vulnerabilities/Exposed Panels - CrushFTP.php';
 require __DIR__ . '/../src/app/vulnerabilities/Apache Axis2 Default Login.php';
+require __DIR__ . '/../src/app/vulnerabilities/Unauthenticated Gitlab SSRF CVE 2021-22214.php';
 
 $app->run();

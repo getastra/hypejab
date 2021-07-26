@@ -18,3 +18,4 @@ docker-compose up
 - Exposed Panels - CrushFTP
 - Default Admin Login - Apache Axis2
 - Publicly accessible phpinfo & php configuration files
+- Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
