@@ -20,6 +20,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Publicly accessible phpinfo & php configuration files
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
+- Softwares' Version List
 
 ### Changed
 - Restructure Project
