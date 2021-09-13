@@ -18,6 +18,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: JSP Samples Page
 - Vulnerability: Exposed Panels - CrushFTP
 - Vulnerability: Publicly accessible phpinfo & php configuration files
+- Vulnerability: Wordpress Username Enumeration
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
