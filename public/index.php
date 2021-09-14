@@ -19,5 +19,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Apache Axis2 Default Login.php';
 require __DIR__ . '/../src/app/vulnerabilities/Unauthenticated Gitlab SSRF CVE 2021-22214.php';
 require __DIR__ . '/../src/app/vulnerabilities/Software Versions.php';
 require __DIR__ . '/../src/app/vulnerabilities/Wordpress Username Enumeration.php';
+require __DIR__ . '/../src/app/vulnerabilities/Drupal Username Enumeration.php';
 
 $app->run();
