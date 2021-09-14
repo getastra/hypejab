@@ -20,5 +20,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Unauthenticated Gitlab SSRF CVE 2
 require __DIR__ . '/../src/app/vulnerabilities/Software Versions.php';
 require __DIR__ . '/../src/app/vulnerabilities/Wordpress Username Enumeration.php';
 require __DIR__ . '/../src/app/vulnerabilities/Drupal Username Enumeration.php';
+require __DIR__ . '/../src/app/vulnerabilities/Magento Cacheleak.php';
 
 $app->run();
