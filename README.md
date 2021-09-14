@@ -22,3 +22,4 @@ docker-compose up
 - Software Versions List
 - Wordpress Username Enumeration
 - Drupal Username Enumeration
+- Magento Cacheleak
