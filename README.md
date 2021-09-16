@@ -23,3 +23,4 @@ docker-compose up
 - Wordpress Username Enumeration
 - Drupal Username Enumeration
 - Magento Cacheleak
+- SSRF - Parameter Based
