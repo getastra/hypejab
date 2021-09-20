@@ -21,6 +21,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Wordpress Username Enumeration
 - Vulnerability: Drupal Username Enumeration
 - Vulnerability: Magento Cacheleak
+- Vulnerability: SSRF - Parameter Based
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
