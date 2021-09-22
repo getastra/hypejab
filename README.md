@@ -24,3 +24,4 @@ docker-compose up
 - Drupal Username Enumeration
 - Magento Cacheleak
 - SSRF - Parameter Based
+- Magento Config File
