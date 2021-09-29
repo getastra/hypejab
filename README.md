@@ -25,3 +25,4 @@ docker-compose up
 - Magento Cacheleak
 - SSRF - Parameter Based
 - Magento Config File
+- Magento Downloader
