@@ -24,5 +24,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Magento Cacheleak.php';
 require __DIR__ . '/../src/app/vulnerabilities/SSRF.php';
 require __DIR__ . '/../src/app/vulnerabilities/Magento Config File.php';
 require __DIR__ . '/../src/app/vulnerabilities/Magento Downloader.php';
+require __DIR__ . '/../src/app/vulnerabilities/Swagger Config File.php';
 
 $app->run();

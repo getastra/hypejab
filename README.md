@@ -26,3 +26,4 @@ docker-compose up
 - SSRF - Parameter Based
 - Magento Config File
 - Magento Downloader
+- Swagger Config File
