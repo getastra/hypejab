@@ -30,3 +30,4 @@ docker-compose up
 - Wordpress Debugger
 - AWStats Script
 - API Key Scanner
+- Database Connection String
