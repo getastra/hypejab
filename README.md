@@ -29,3 +29,4 @@ docker-compose up
 - Swagger Config File
 - Wordpress Debugger
 - AWStats Script
+- API Key Scanner

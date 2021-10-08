@@ -27,5 +27,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Magento Downloader.php';
 require __DIR__ . '/../src/app/vulnerabilities/Swagger Config File.php';
 require __DIR__ . '/../src/app/vulnerabilities/WP Debug.php';
 require __DIR__ . '/../src/app/vulnerabilities/AWStats Script.php';
+require __DIR__ . '/../src/app/vulnerabilities/API Key Scanner.php';
 
 $app->run();
