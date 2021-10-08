@@ -27,3 +27,5 @@ docker-compose up
 - Magento Config File
 - Magento Downloader
 - Swagger Config File
+- Wordpress Debugger
+- AWStats Script
