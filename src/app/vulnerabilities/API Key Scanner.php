@@ -5,7 +5,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/api-key-scanner/',
+    '/api-key-scanner',
     function (Request $request, Response $response) {
         $response->getBody()->write('
         <h1>API Key Scanner</h1>
