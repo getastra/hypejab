@@ -5,7 +5,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/wp/wp-content/uploads',
+    '/wp-content/uploads/',
     function (Request $request, Response $response) {
         $html = file_get_contents(__DIR__ . "/../resources/wp-media-enum/uploads.html");
         $response->getBody()->write($html);
