@@ -74,7 +74,17 @@ $app->get(
                     <img src="https://raw.githubusercontent.com/karthikuj/karthikuj/master/images/rick-and-morty-web.webp" title="Wubba Lubba Dub Dub">
                 </div>
                 <!-- 
-                Remember to delete this later: Provider=PostgreSQL OLE DB Provider;Data Source=myServerAddress;location=myDataBase;User ID=myUsername;password=myPassword;timeout=1000;
+                    Remember to delete this later: 
+                    Provider=PostgreSQL OLE DB Provider;Data Source=myServerAddress;location=myDataBase;User ID=myUsername;password=myPassword;timeout=1000;
+                    mysql://erwin@aot(/shinzou/wo/sasageyo)/dbname
+                    odbc(access)://levi@/datasourcename
+                    Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb;Jet OLEDB:Database Password=MyDbPassword;
+                    Data Source=c:\mydb.db;Version=3;
+                    Server=myServerAddress;Port=1234;Database=myDataBase;Uid=myUsername;Pwd=myPassword;
+                    Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;
+                    Provider=ADSDSOObject;User Id=myUsername;Password=myPassword;
+                    Data Source=MyOracleDB;User Id=myUsername;Password=myPassword;Integrated Security=no;
+                    User ID=myUsername;Password=myPassword;Host=ora;Pooling=true;Min Pool Size=0;Max Pool Size=100;Connection Lifetime=0;
                 -->
                 <p class="bubble1"></p>
                 <p class="bubble2"></p>

@@ -31,3 +31,4 @@ docker-compose up
 - AWStats Script
 - API Key Scanner
 - Database Connection String
+- MySQL Username Disclosure
