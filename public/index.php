@@ -1,6 +1,9 @@
 <?php
 
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Log\LoggerInterface;
 use Slim\Factory\AppFactory;
+use Slim\Psr7\Response;
 
 require __DIR__.'/../vendor/autoload.php';
 
@@ -31,6 +34,35 @@ require __DIR__ . '/../src/app/vulnerabilities/API Key Scanner.php';
 require __DIR__ . '/../src/app/vulnerabilities/Database Connection String.php';
 require __DIR__ . '/../src/app/vulnerabilities/MySQL Username Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/WP-Media-Enum.php';
+require __DIR__ . '/../src/app/vulnerabilities/403 Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Firebase-Database-Url-Disclosure.php';
+
+// Define Custom Error Handler
+$customErrorHandler = function (
+    ServerRequestInterface $request,
+    Throwable $exception,
+    bool $displayErrorDetails,
+    bool $logErrors,
+    bool $logErrorDetails,
+    ?LoggerInterface $logger = null
+) use ($app) {
+    //$logger->error($exception->getMessage());
+
+    $payload = ['error' => $exception->getMessage()];
+
+    $response = $app->getResponseFactory()->createResponse();
+    $response->getBody()->write(
+        json_encode($payload, JSON_UNESCAPED_UNICODE)
+    );
+
+    if ($exception->getMessage() == 'Not found.') {
+        return $response->withStatus(404);
+    }
+    return $response;
+};
+
+// Add Error Middleware
+$errorMiddleware = $app->addErrorMiddleware(true, true, true);
+$errorMiddleware->setDefaultErrorHandler($customErrorHandler);
 
 $app->run();

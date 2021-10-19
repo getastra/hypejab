@@ -32,4 +32,5 @@ docker-compose up
 - API Key Scanner
 - Database Connection String
 - MySQL Username Disclosure
+- 403 Bypass
 - Firebase Database Unauthorized Access
