@@ -31,6 +31,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Database Connection String
 - Vulnerability: MySQL Username Disclosure
 - Vulnerability: 403 Bypass
+- Vulnerability: Firebase Database Unauthorized Access
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
