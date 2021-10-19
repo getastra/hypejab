@@ -31,5 +31,6 @@ require __DIR__ . '/../src/app/vulnerabilities/API Key Scanner.php';
 require __DIR__ . '/../src/app/vulnerabilities/Database Connection String.php';
 require __DIR__ . '/../src/app/vulnerabilities/MySQL Username Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/WP-Media-Enum.php';
+require __DIR__ . '/../src/app/vulnerabilities/Firebase-Database-Url-Disclosure.php';
 
 $app->run();
