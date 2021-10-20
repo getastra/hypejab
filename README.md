@@ -34,3 +34,4 @@ docker-compose up
 - MySQL Username Disclosure
 - 403 Bypass
 - Firebase Database Unauthorized Access
+- Base Tag Hijacking
