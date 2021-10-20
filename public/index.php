@@ -36,6 +36,7 @@ require __DIR__ . '/../src/app/vulnerabilities/MySQL Username Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/WP-Media-Enum.php';
 require __DIR__ . '/../src/app/vulnerabilities/403 Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Firebase-Database-Url-Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Base Tag Hijacking.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
@@ -56,9 +57,10 @@ $customErrorHandler = function (
     );
 
     if ($exception->getMessage() == 'Not found.') {
-        return $response->withStatus(404);
+        return $response->withHeader("content-type", "application/json")
+                        ->withStatus(404);
     }
-    return $response;
+    return $response->withHeader("content-type", "application/json");
 };
 
 // Add Error Middleware
