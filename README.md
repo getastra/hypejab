@@ -35,3 +35,4 @@ docker-compose up
 - 403 Bypass
 - Firebase Database Unauthorized Access
 - Base Tag Hijacking
+- Magento API Anonymous Access

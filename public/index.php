@@ -8,6 +8,7 @@ use Slim\Psr7\Response;
 require __DIR__.'/../vendor/autoload.php';
 
 $app = AppFactory::create();
+$app->addBodyParsingMiddleware();
 $app->addRoutingMiddleware();
 
 require __DIR__ . '/../src/app/index.php';
@@ -37,6 +38,7 @@ require __DIR__ . '/../src/app/vulnerabilities/WP-Media-Enum.php';
 require __DIR__ . '/../src/app/vulnerabilities/403 Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Firebase-Database-Url-Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Base Tag Hijacking.php';
+require __DIR__ . '/../src/app/vulnerabilities/Magento API Anonymous Access.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
