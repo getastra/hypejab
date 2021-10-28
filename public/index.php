@@ -39,6 +39,8 @@ require __DIR__ . '/../src/app/vulnerabilities/403 Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Firebase-Database-Url-Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Base Tag Hijacking.php';
 require __DIR__ . '/../src/app/vulnerabilities/Magento API Anonymous Access.php';
+require __DIR__ . '/../src/app/vulnerabilities/OAST XXE.php';
+require __DIR__ . '/../src/app/vulnerabilities/Laravel Log File.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (

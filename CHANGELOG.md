@@ -34,6 +34,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Firebase Database Unauthorized Access
 - Vulnerability: Base Tag Hijacking
 - Vulnerability: Magento API Anonymous Access
+- Vulnerability: Out-of-Band XXE
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List

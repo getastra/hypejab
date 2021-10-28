@@ -36,3 +36,4 @@ docker-compose up
 - Firebase Database Unauthorized Access
 - Base Tag Hijacking
 - Magento API Anonymous Access
+- Out-of-Band XXE
