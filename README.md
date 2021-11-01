@@ -38,3 +38,4 @@ docker-compose up
 - Magento API Anonymous Access
 - Out-of-Band XXE
 - Apache Cassandra Unauthorized Access
+- Laravel Ignition Reflected XSS

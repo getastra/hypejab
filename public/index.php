@@ -42,6 +42,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Magento API Anonymous Access.php'
 require __DIR__ . '/../src/app/vulnerabilities/OAST XXE.php';
 require __DIR__ . '/../src/app/vulnerabilities/Laravel Log File.php';
 require __DIR__ . '/../src/app/vulnerabilities/Apache Cassandra Unauthorized Access.php';
+require __DIR__ . '/../src/app/vulnerabilities/Laravel XSS.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
