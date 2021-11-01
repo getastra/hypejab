@@ -37,3 +37,4 @@ docker-compose up
 - Base Tag Hijacking
 - Magento API Anonymous Access
 - Out-of-Band XXE
+- Apache Cassandra Unauthorized Access

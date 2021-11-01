@@ -35,6 +35,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Base Tag Hijacking
 - Vulnerability: Magento API Anonymous Access
 - Vulnerability: Out-of-Band XXE
+- Vulnerability: Apache Cassandra Unauthorized Access
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
