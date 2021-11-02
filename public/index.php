@@ -43,6 +43,7 @@ require __DIR__ . '/../src/app/vulnerabilities/OAST XXE.php';
 require __DIR__ . '/../src/app/vulnerabilities/Laravel Log File.php';
 require __DIR__ . '/../src/app/vulnerabilities/Apache Cassandra Unauthorized Access.php';
 require __DIR__ . '/../src/app/vulnerabilities/Laravel XSS.php';
+require __DIR__ . '/../src/app/vulnerabilities/S3 Bucket Publicly Accessible.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (

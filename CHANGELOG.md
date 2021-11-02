@@ -37,6 +37,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Out-of-Band XXE
 - Vulnerability: Apache Cassandra Unauthorized Access
 - Vulnerability: Laravel Ignition Reflected XSS
+- Vulnerability: S3 Bucket Publicly Accessible
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
