@@ -38,6 +38,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Apache Cassandra Unauthorized Access
 - Vulnerability: Laravel Ignition Reflected XSS
 - Vulnerability: S3 Bucket Publicly Accessible
+- Vulnerability: Arbitrary File Read Next.js
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List

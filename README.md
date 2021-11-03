@@ -40,3 +40,4 @@ docker-compose up
 - Apache Cassandra Unauthorized Access
 - Laravel Ignition Reflected XSS
 - S3 Bucket Publicly Accessible
+- Arbitrary File Read Next.js
