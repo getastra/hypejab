@@ -45,6 +45,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Apache Cassandra Unauthorized Acc
 require __DIR__ . '/../src/app/vulnerabilities/Laravel XSS.php';
 require __DIR__ . '/../src/app/vulnerabilities/S3 Bucket Publicly Accessible.php';
 require __DIR__ . '/../src/app/vulnerabilities/Arbitrary File Read Next JS.php';
+require __DIR__ . '/../src/app/vulnerabilities/Chrome Logger Information Disclosure.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (

@@ -39,6 +39,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Laravel Ignition Reflected XSS
 - Vulnerability: S3 Bucket Publicly Accessible
 - Vulnerability: Arbitrary File Read Next.js
+- Vulnerability: Chrome Logger Information Disclosures
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
