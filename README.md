@@ -42,3 +42,4 @@ docker-compose up
 - S3 Bucket Publicly Accessible
 - Arbitrary File Read Next.js
 - Chrome Logger Information Disclosure
+- Apache Tomcat Examples Directory
