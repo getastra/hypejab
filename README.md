@@ -44,3 +44,4 @@ docker-compose up
 - Chrome Logger Information Disclosure
 - Apache Tomcat Examples Directory
 - Merurial Repository Found
+- Flask Debug Mode

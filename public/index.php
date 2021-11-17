@@ -48,6 +48,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Arbitrary File Read Next JS.php';
 require __DIR__ . '/../src/app/vulnerabilities/Chrome Logger Information Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Apache Tomcat Examples Directory.php';
 require __DIR__ . '/../src/app/vulnerabilities/Merurial Repository.php';
+require __DIR__ . '/../src/app/vulnerabilities/Flask Debug Mode.php';
 
 
 // Define Custom Error Handler

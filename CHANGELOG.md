@@ -42,6 +42,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Chrome Logger Information Disclosures
 - Vulnerability: Apache Tomcat Examples Directory
 - Vulnerability: Merurial Repository Found
+- Vulnerability: Flask Debug Mode
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
