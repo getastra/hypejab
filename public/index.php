@@ -49,6 +49,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Chrome Logger Information Disclos
 require __DIR__ . '/../src/app/vulnerabilities/Apache Tomcat Examples Directory.php';
 require __DIR__ . '/../src/app/vulnerabilities/Merurial Repository.php';
 require __DIR__ . '/../src/app/vulnerabilities/Flask Debug Mode.php';
+require __DIR__ . '/../src/app/vulnerabilities/Drupal Backup Migrate.php';
 
 
 // Define Custom Error Handler
