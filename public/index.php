@@ -45,6 +45,12 @@ require __DIR__ . '/../src/app/vulnerabilities/Apache Cassandra Unauthorized Acc
 require __DIR__ . '/../src/app/vulnerabilities/Laravel XSS.php';
 require __DIR__ . '/../src/app/vulnerabilities/S3 Bucket Publicly Accessible.php';
 require __DIR__ . '/../src/app/vulnerabilities/Arbitrary File Read Next JS.php';
+require __DIR__ . '/../src/app/vulnerabilities/Chrome Logger Information Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Apache Tomcat Examples Directory.php';
+require __DIR__ . '/../src/app/vulnerabilities/Merurial Repository.php';
+require __DIR__ . '/../src/app/vulnerabilities/Flask Debug Mode.php';
+require __DIR__ . '/../src/app/vulnerabilities/Drupal Backup Migrate.php';
+
 
 // Define Custom Error Handler
 $customErrorHandler = function (

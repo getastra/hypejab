@@ -41,3 +41,8 @@ docker-compose up
 - Laravel Ignition Reflected XSS
 - S3 Bucket Publicly Accessible
 - Arbitrary File Read Next.js
+- Chrome Logger Information Disclosure
+- Apache Tomcat Examples Directory
+- Merurial Repository Found
+- Flask Debug Mode
+- Drupal backup_migrate
