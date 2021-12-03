@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/api-key-scanner',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
         <h1>API Key Scanner</h1>
         <p>

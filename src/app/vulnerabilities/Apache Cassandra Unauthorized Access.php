@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/resources/apache-cassandra-3.11.10/conf/cassandra.yaml',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
 # Authentication backend, implementing IAuthenticator; used to identify users
 # Out of the box, Cassandra provides org.apache.cassandra.auth.{AllowAllAuthenticator,

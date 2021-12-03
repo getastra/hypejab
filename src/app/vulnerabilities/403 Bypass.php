@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/403-bypass',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $header = $request->getHeaderLine('X-Forwarded-Host');
         if ($header == '127.0.0.1') {
             $response->getBody()->write('Hemlo Hecker');
@@ -23,6 +24,7 @@ $app->get(
 $app->post(
     '/403-bypass',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $cl = $request->getHeaderLine('Content-Length');
         if ($cl == '0') {
             $response->getBody()->write('Hemlo Hecker');

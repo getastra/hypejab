@@ -26,7 +26,7 @@ $app->post(
             session_start();
             $_SESSION['user'] = 'Heisenberg';
             $_SESSION['start'] = time();
-            $_SESSION['expire'] = $_SESSION['start'] + 45;
+            $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
             header("Location: /loginPoll");
             die();
         } else {

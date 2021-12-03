@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/xxe-post?productId=2',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
@@ -16,6 +17,7 @@ $app->get(
 $app->get(
     '/xxe-post',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $data = '<?xml version="1.0"?><check>';
         $query = $request->getQueryParams();
         foreach ($query as $key => $value) {

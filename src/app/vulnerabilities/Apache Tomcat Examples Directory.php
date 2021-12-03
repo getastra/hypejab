@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/examples/',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('<!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with

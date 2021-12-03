@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/base-tag-hijacking',
     function (Request $request, Response $response, $args) {
+        require __DIR__ . '/../login/checkSession.php';
         $query = $request->getQueryParams()['val'];
         $response->getBody()->write('
         <html>
@@ -42,6 +43,7 @@ $app->get(
 $app->get(
     '/base-tag-hijacking?val=nara',
     function (Request $request, Response $response, $args) {
+        require __DIR__ . '/../login/checkSession.php';
         $query = $request->getQueryParams()['val'];
         $response->getBody()->write('
         <html>
