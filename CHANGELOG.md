@@ -48,6 +48,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
 - Error Handling
+- Hypejab Authentication
 
 ### Changed
 - Restructure Project
