@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/storage/logs/laravel.log',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
         [2019-08-29 14:35:04] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\wamp64\\www\\cportal-laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:168)
             [stacktrace]

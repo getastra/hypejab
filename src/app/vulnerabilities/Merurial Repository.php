@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/mercurial/testing/hemlo',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('Under Construction');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
@@ -16,6 +17,7 @@ $app->get(
 $app->get(
     '/mercurial/testing/.hg/',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
         <html>
          <head>

@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/axis2/axis2-admin/welcome.html',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $html = file_get_contents(__DIR__ . "/../resources/axis2/welcome.html");
         $response->getBody()->write($html);
         return $response->withHeader("content-type", "text/html")
@@ -17,6 +18,7 @@ $app->get(
 $app->get(
     '/axis2/axis2-admin/welcome',
     function (Request $request, Response $response, array $args) {
+        require __DIR__ . '/../login/checkSession.php';
         return $response->withHeader(
             'Location',
             "http://{$_SERVER['HTTP_HOST']}/axis2/axis2-admin/welcome.html"
@@ -27,6 +29,7 @@ $app->get(
 $app->post(
     '/axis2-admin/login',
     function (Request $request, Response $response, array $args) {
+        require __DIR__ . '/../login/checkSession.php';
         $_body = $request->getParsedBody();
         $_usname = $_body['userName'];
         $_pass = $_body['password'];

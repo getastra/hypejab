@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/site/sites/default/files/backup_migrate/manual/test.txt',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('this file should not be publicly accesible');
         return $response->withHeader("content-type", "text/plain")
                         ->withStatus(200);
@@ -16,6 +17,7 @@ $app->get(
 $app->get(
     '/site/sites/default/files/backup_migrate/manual/',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
 <html>
 <body>

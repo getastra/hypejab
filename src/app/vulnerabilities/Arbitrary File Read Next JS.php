@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/_next/',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('<html>
 <head>
     <title> Punisher </title>
@@ -40,6 +41,7 @@ $app->get(
 $app->get(
     '/_next\..\..\..\..\..\..\..\..\..\etc\passwd',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('<html>
 <head>
     <title> Punisher </title>

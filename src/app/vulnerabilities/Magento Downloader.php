@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/downloader/',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
         <html>
             <head>

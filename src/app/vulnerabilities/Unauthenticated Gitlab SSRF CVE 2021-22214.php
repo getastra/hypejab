@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/api/v4/ci/lint',
     function (Request $request, Response $response, array $args) {
+        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('{"error": "404 Not Found"}');
         return $response->withHeader("content-type", "application/json")
                         ->withStatus(404);
@@ -16,6 +17,7 @@ $app->get(
 $app->post(
     '/api/v4/ci/lint',
     function (Request $request, Response $response, array $args) {
+        require __DIR__ . '/../login/checkSession.php';
         $_body = $request->getBody();
         
         if(!empty($_body)){

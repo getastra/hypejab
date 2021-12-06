@@ -7,6 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/ssrf-parameter-based',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $html = file_get_contents(__DIR__ . "/../resources/ssrf/dns-spoofing.html");
         $response->getBody()->write($html);
         return $response->withHeader("content-type", "text/html")
@@ -17,6 +18,7 @@ $app->get(
 $app->post(
     '/ssrf-parameter-based',
     function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
         $_body = $request->getParsedBody();
         $file = strtolower($_body['file']);
         $html = '<html>

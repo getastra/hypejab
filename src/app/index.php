@@ -23,11 +23,40 @@ $app->get(
             }
         }
         
-        $response->getBody()->write(
-            "Welcome to HypeJab! 💉 😃 <br>"
-            ."HypeJab is a deliberately vulnerable web application"
-            ." intended for benchmarking automated scanners."
-        );
+        $response->getBody()->write('<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hypejab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse  bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hypejab</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/hypejablogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Welcome to HypeJab! 💉 😃 </h3>
+  <p>HypeJab is a deliberately vulnerable web application intended for benchmarking automated scanners.</p>
+</div>
+
+</body>
+</html>
+');
 
         return $response;
     }
