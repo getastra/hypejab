@@ -1,9 +1,9 @@
 <?php
 
-//session_start();
-//if (!isset($_SESSION['user'])) {
-//    header("Location: /hypejablogin");
-//    die();
-//}
+session_start();
+if (!isset($_SESSION['user'])) {
+    header("Location: /hypejablogin");
+    die();
+}
 
 ?>
