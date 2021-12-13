@@ -34,9 +34,9 @@ $app->get(
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="/">Home</a></li>
                 </ul>
-                <!--<ul class="nav navbar-nav navbar-right">
-                  <li><a href="/hypejablogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/hypejablogout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                </ul>
               </div>
             </nav>
 <h1 style="text-align:center;">Welcome! '.$_SESSION['user'].'</h1>

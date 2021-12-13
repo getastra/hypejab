@@ -19,10 +19,28 @@ $app->get(
     }
 );
 
+$app->get(
+    '/hypejablogout',
+    function (Request $request, Response $response) {
+        session_start();
+        if (isset($_SESSION['user'])) {
+            session_destroy();
+            header("Location: /hypejablogin");
+            die();
+        } else {
+            header("Location: /loginPoll");
+            die();
+        }
+        $response->getBody()->write('Logging out...');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
+
 $app->post(
     '/loginVerify',
     function (Request $request, Response $response) {
-        if ($_POST['username'] == 'saymyname' && $_POST['password'] == 'heisenberg') {
+        if ($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') {
             session_start();
             $_SESSION['user'] = 'Heisenberg';
             $_SESSION['start'] = time();
