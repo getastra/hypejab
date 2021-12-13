@@ -52,6 +52,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Apache Tomcat Examples Directory.
 require __DIR__ . '/../src/app/vulnerabilities/Merurial Repository.php';
 require __DIR__ . '/../src/app/vulnerabilities/Flask Debug Mode.php';
 require __DIR__ . '/../src/app/vulnerabilities/Drupal Backup Migrate.php';
+require __DIR__ . '/../src/app/vulnerabilities/Log4j RCE.php';
 
 
 // Define Custom Error Handler
