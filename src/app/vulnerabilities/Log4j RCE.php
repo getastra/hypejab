@@ -51,7 +51,7 @@ $app->get(
             curl_close($ch);
 
         } else if (strpos($query, 'jndi') !== false) {
-            $pos = strpos($query,"val.");
+            $pos = strpos($query,"//") + 2;
             $domain = $domain = substr($query, $pos, -1);
             echo $domain;
 
