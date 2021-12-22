@@ -7,7 +7,6 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/app/etc/local.xml',
     function (Request $request, Response $response) {
-        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('<?xml version="1.0"?>
         <!--
         /**

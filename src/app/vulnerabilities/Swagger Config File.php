@@ -7,7 +7,6 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/api/swagger/docs/v2/swagger.json',
     function (Request $request, Response $response) {
-      require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('{
             "swagger": "3.0",
             "info": {

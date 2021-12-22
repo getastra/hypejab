@@ -7,7 +7,6 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/_ignition/scripts/{attack}',
     function (Request $request, Response $response, $args) {
-        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
 <html>
     <head>

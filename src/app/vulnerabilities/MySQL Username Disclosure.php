@@ -7,7 +7,6 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/mysql-username-disclosure',
     function (Request $request, Response $response) {
-        require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write("
         <html>
             <head>

@@ -7,7 +7,6 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/V1/store/storeConfigs',
     function (Request $request, Response $response) {
-      require __DIR__ . '/../login/checkSession.php';
       $response->getBody()->write('<?xml version="1.0"?>
       <response>
         <item>

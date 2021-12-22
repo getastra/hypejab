@@ -7,7 +7,6 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/awstats-6.6/wwwroot/cgi-bin/awstats.pl',
     function (Request $request, Response $response) {
-      require __DIR__ . '/../login/checkSession.php';
       $response->getBody()->write('#!/usr/bin/perl
 #------------------------------------------------------------------------------
 # Free realtime web server logfile analyzer to show advanced web statistics.
