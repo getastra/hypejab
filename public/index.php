@@ -53,7 +53,8 @@ require __DIR__ . '/../src/app/vulnerabilities/Merurial Repository.php';
 require __DIR__ . '/../src/app/vulnerabilities/Flask Debug Mode.php';
 require __DIR__ . '/../src/app/vulnerabilities/Drupal Backup Migrate.php';
 require __DIR__ . '/../src/app/vulnerabilities/Log4j RCE.php';
-
+require __DIR__ . '/../src/app/vulnerabilities/X-Powered-By Header.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
