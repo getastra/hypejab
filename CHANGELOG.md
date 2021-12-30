@@ -45,6 +45,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Flask Debug Mode
 - Vulnerability: Drupal backup_migrate
 - Vulnerability: Log4j RCE
+- Vulnerability: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
+- FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
