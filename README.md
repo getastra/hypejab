@@ -51,3 +51,4 @@ docker-compose up
 - Dangerous JS Functions
 - wpeprivate Config Information Disclosure
 - Bazaar Repository Found
+- Server Side Template Injection (Django)
