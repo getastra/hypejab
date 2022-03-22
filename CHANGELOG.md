@@ -50,6 +50,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: wpeprivate Config Information Disclosure
 - Vulnerability: Bazaar Repository Found
 - Vulnerability: Server Side Template Injection (Django)
+- Vulnerability: SQLI Auth Bypass
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
 - GIF Favicon

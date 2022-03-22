@@ -52,3 +52,4 @@ docker-compose up
 - wpeprivate Config Information Disclosure
 - Bazaar Repository Found
 - Server Side Template Injection (Django)
+- SQLI Auth Bypass
