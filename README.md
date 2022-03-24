@@ -53,3 +53,4 @@ docker-compose up
 - Bazaar Repository Found
 - Server Side Template Injection (Django)
 - SQLI Auth Bypass
+- Forced Browsing Auth Bypass

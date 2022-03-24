@@ -59,6 +59,7 @@ require __DIR__ . '/../src/app/vulnerabilities/wpeprivate Config Info Disclosure
 require __DIR__ . '/../src/app/vulnerabilities/Bazaar Repository.php';
 require __DIR__ . '/../src/app/vulnerabilities/Server Side Template Injection.php';
 require __DIR__ . '/../src/app/vulnerabilities/SQLI Auth Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/Forced Browsing Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 

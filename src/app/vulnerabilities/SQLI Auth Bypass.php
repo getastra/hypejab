@@ -7,7 +7,7 @@ use Slim\Factory\AppFactory;
 $app->get(
     '/sqli-auth-bypass-login-page',
     function (Request $request, Response $response, $args) {
-        // require __DIR__ . '/../login/checkSession.php';
+        require __DIR__ . '/../login/checkSession.php';
 
         session_start();
         if (isset($_SESSION["sqli-auth-bypass"])) {
@@ -47,7 +47,7 @@ $app->post(
     '/sqli-auth-bypass-verification',
     function (Request $request, Response $response, $args) {
 
-        // require __DIR__ . '/../login/checkSession.php';
+        require __DIR__ . '/../login/checkSession.php';
 
         $username = $_POST["Username"];
         $password = $_POST["Password"];
@@ -69,7 +69,7 @@ $app->post(
 $app->get(
     '/sqli-auth-bypass-admin-account',
     function (Request $request, Response $response, $args) {
-        // require __DIR__ . '/../login/checkSession.php';
+        require __DIR__ . '/../login/checkSession.php';
 
         session_start();
         if (isset($_SESSION["sqli-auth-bypass"])) {
