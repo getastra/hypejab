@@ -54,3 +54,4 @@ docker-compose up
 - Server Side Template Injection (Django)
 - SQLI Auth Bypass
 - Forced Browsing Auth Bypass
+- Parameter Modification Auth Bypass
