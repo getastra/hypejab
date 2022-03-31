@@ -34,7 +34,7 @@ $app->get(
                 <title>Unauthorized WebDAV Instance</title>
             <head>
             <body>
-                <h2> Authorized WebDAV Instance <h2>
+                <h2> Unauthorized WebDAV Instance <h2>
 
                 <p> Send a PROPFIND request at this URL to get 207 status </p>
                 <p> Send an OPTIONS request at this URL to see the allowed HTTP Methods in the Allow header</p>
