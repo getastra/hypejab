@@ -49,3 +49,4 @@ docker-compose up
 - Log4j RCE
 - Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Servers
 - Dangerous JS Functions
+- WebDAV Directory Has Write Permissions

@@ -57,6 +57,7 @@ require __DIR__ . '/../src/app/vulnerabilities/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
