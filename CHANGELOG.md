@@ -47,6 +47,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Log4j RCE
 - Vulnerability: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - Vulnerability: Dangerous JS Functions
+- Vulnerability: wpeprivate Config Information Disclosure
+- Vulnerability: Bazaar Repository Found
+- Vulnerability: Server Side Template Injection (Django)
+- Vulnerability: SQLI Auth Bypass
+- Vulnerability: Forced Browsing Auth Bypass
+- Vulnerability: Parameter Modification Auth Bypass
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
 - GIF Favicon
