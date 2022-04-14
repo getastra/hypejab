@@ -60,6 +60,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Software Versions List
 - Error Handling
 - Hypejab Authentication
+- CockroachDB Broken Access Control Direct Check
+- Symfony Secret Fragments Remote Code Execution
 
 ### Changed
 - Restructure Project
