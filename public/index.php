@@ -61,6 +61,8 @@ require __DIR__ . '/../src/app/vulnerabilities/Server Side Template Injection.ph
 require __DIR__ . '/../src/app/vulnerabilities/SQLI Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Forced Browsing Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Parameter Modification Auth Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/Session ID Modification Auth Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/Spring4shell.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
