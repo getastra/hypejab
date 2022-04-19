@@ -47,6 +47,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Log4j RCE
 - Vulnerability: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - Vulnerability: Dangerous JS Functions
+- Vulnerability: WebDAV Directory Has Write Permissions
 - Vulnerability: wpeprivate Config Information Disclosure
 - Vulnerability: Bazaar Repository Found
 - Vulnerability: Server Side Template Injection (Django)
@@ -60,7 +61,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Software Versions List
 - Error Handling
 - Hypejab Authentication
-
+- Git Credential Disclosure
 ### Changed
 - Restructure Project
  

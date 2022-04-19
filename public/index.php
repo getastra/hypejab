@@ -63,6 +63,11 @@ require __DIR__ . '/../src/app/vulnerabilities/Forced Browsing Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Parameter Modification Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/GitCredentialsDisclosure.php';
+<<<<<<< HEAD
+=======
+require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
+>>>>>>> 5ee74e6b742527d9d5f6d2252ec9c1bd506017be
 
 // Define Custom Error Handler
 $customErrorHandler = function (
