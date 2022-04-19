@@ -57,7 +57,11 @@ docker-compose up
 - Forced Browsing Auth Bypass
 - Parameter Modification Auth Bypass
 - Spring4shell (CVE-2022-22965)
+<<<<<<< HEAD
 - Adminer Panel Exposed
 - GitHub Workflow Disclosure
 - Atlassian Confluence Information Disclosure
 - Nginx Merge Slashes Path Traversal
+=======
+- Adminer Panel Exposed
+>>>>>>> de61eba... Adds Adminer Panel Exposed Vuln
