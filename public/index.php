@@ -69,7 +69,6 @@ require __DIR__ . '/../src/app/vulnerabilities/GitCredentialsDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
 require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
-require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
