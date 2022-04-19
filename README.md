@@ -55,3 +55,4 @@ docker-compose up
 - SQLI Auth Bypass
 - Forced Browsing Auth Bypass
 - Parameter Modification Auth Bypass
+- Spring4shell (CVE-2022-22965)
