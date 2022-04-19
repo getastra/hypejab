@@ -61,13 +61,15 @@ require __DIR__ . '/../src/app/vulnerabilities/Server Side Template Injection.ph
 require __DIR__ . '/../src/app/vulnerabilities/SQLI Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Forced Browsing Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Parameter Modification Auth Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/Session ID Modification Auth Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/Spring4shell.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/GitCredentialsDisclosure.php';
-<<<<<<< HEAD
-=======
 require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
->>>>>>> 5ee74e6b742527d9d5f6d2252ec9c1bd506017be
+require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
+require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
+require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (

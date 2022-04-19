@@ -12,6 +12,14 @@ $app->get(
         $expected_key = "attachment_id";
         $expected_value = "100";
         $query_params = $request->getQueryParams();
+
+        $cookie_name = "AUTH";
+        $cookie_value = new stdClass();
+        $cookie_value->user = "user1";
+        $cookie_value->role = "stdUser";
+        $cookieJSON = json_encode($cookie_value);
+        $cookieB64 = base64_encode($cookieJSON);
+        setcookie($cookie_name, $cookieB64, time() + (86400 * 30), "/");
         
         foreach ($query_params as $key => $value) {
             
@@ -52,7 +60,7 @@ $app->get(
 <div class="container">
   <h3>Welcome to HypeJab! 💉 😃 </h3>
   <p>HypeJab is a deliberately vulnerable web application intended for benchmarking automated scanners.</p>
-  <p>v1.0.5</p>
+  <p>v1.0.6</p>
 </div>
 
 </body>

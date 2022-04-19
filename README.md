@@ -49,9 +49,11 @@ docker-compose up
 - Log4j RCE
 - Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Servers
 - Dangerous JS Functions
+- WebDAV Directory Has Write Permissions
 - wpeprivate Config Information Disclosure
 - Bazaar Repository Found
 - Server Side Template Injection (Django)
 - SQLI Auth Bypass
 - Forced Browsing Auth Bypass
 - Parameter Modification Auth Bypass
+- Spring4shell (CVE-2022-22965)

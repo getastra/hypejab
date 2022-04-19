@@ -54,6 +54,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: SQLI Auth Bypass
 - Vulnerability: Forced Browsing Auth Bypass
 - Vulnerability: Parameter Modification Auth Bypass
+- Vulnerability: Spring4shell (CVE-2022-22965)
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
 - GIF Favicon
@@ -62,6 +63,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Error Handling
 - Hypejab Authentication
 - Git Credential Disclosure
+- CockroachDB Broken Access Control Direct Check
+- Symfony Secret Fragments Remote Code Execution
+
 ### Changed
 - Restructure Project
  
