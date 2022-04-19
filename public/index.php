@@ -65,6 +65,9 @@ require __DIR__ . '/../src/app/vulnerabilities/Session ID Modification Auth Bypa
 require __DIR__ . '/../src/app/vulnerabilities/Spring4shell.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
+require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
+require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
