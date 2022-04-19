@@ -70,9 +70,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Git Credential Disclosure
 - CockroachDB Broken Access Control Direct Check
 - Symfony Secret Fragments Remote Code Execution
+<<<<<<< HEAD
 - Spring Actuator Endpoints Publicly Available
 - PHPMyadmin Information Schema Disclosure
 - SSH Authorized Key Disclosure
+=======
+- Git Credential Disclosure
+>>>>>>> 97b4855... added route for git credentials disclosure
 
 ### Changed
 - Restructure Project
