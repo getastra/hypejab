@@ -58,6 +58,7 @@ docker-compose up
 - Parameter Modification Auth Bypass
 - Spring4shell (CVE-2022-22965)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Adminer Panel Exposed
 - GitHub Workflow Disclosure
 - Atlassian Confluence Information Disclosure
@@ -65,3 +66,7 @@ docker-compose up
 =======
 - Adminer Panel Exposed
 >>>>>>> de61eba... Adds Adminer Panel Exposed Vuln
+=======
+- Adminer Panel Exposed
+- GitHub Workflow Disclosure
+>>>>>>> 2d14622... Adds GitHub workflow disclosure vulnerability
