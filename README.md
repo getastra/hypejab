@@ -58,3 +58,4 @@ docker-compose up
 - Parameter Modification Auth Bypass
 - Spring4shell (CVE-2022-22965)
 - Adminer Panel Exposed
+- GitHub Workflow Disclosure

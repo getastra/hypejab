@@ -63,11 +63,14 @@ require __DIR__ . '/../src/app/vulnerabilities/Forced Browsing Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Parameter Modification Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Session ID Modification Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Spring4shell.php';
-require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
-require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
 require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
 require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
+require __DIR__ . '/../src/app/vulnerabilities/GitHub Workflow Disclosure.php';
+
+// Intentional false positives:
+require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
