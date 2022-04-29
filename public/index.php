@@ -67,6 +67,8 @@ require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
 require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
 require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 require __DIR__ . '/../src/app/vulnerabilities/GitHub Workflow Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
 
 // Intentional false positives:
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
