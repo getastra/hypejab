@@ -88,6 +88,8 @@ require __DIR__ . '/../src/app/vulnerabilities/PHPMyadminInformationSchemaDisclo
 require __DIR__ . '/../src/app/vulnerabilities/SSHAuthorizedKeysDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/SpringActuatorEndpointsExposed.php';
 require __DIR__ . '/../src/app/vulnerabilities/GitHub Workflow Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
 
 // Intentional false positives:
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
