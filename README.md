@@ -59,3 +59,5 @@ docker-compose up
 - Spring4shell (CVE-2022-22965)
 - Adminer Panel Exposed
 - GitHub Workflow Disclosure
+- Atlassian Confluence Information Disclosure
+- Nginx Merge Slashes Path Traversal
