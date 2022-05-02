@@ -55,6 +55,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Forced Browsing Auth Bypass
 - Vulnerability: Parameter Modification Auth Bypass
 - Vulnerability: Spring4shell (CVE-2022-22965)
+- Vulnerability: Adminer Panel Exposed
+- Vulnerability: GitHub Workflow Disclosure
+- Vulnerability: Atlassian Confluence Information Disclosure
+- Vulnerability: Nginx Merge Slashes Path Traversal
+
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
 - GIF Favicon
