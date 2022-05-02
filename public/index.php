@@ -69,6 +69,17 @@ require __DIR__ . '/../src/app/vulnerabilities/GitCredentialsDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
 require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
 require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
+require __DIR__ . '/../src/app/vulnerabilities/CockroachDBBrokenAccess.php';
+require __DIR__ . '/../src/app/vulnerabilities/SymfonySecretFragment.php';
+require __DIR__ . '/../src/app/vulnerabilities/WebDAVRoutes.php';
+require __DIR__ . '/../src/app/vulnerabilities/PHPMyadminInformationSchemaDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/SSHAuthorizedKeysDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/SpringActuatorEndpointsExposed.php';
+require __DIR__ . '/../src/app/vulnerabilities/GitHub Workflow Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information Disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
