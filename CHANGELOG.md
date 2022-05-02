@@ -69,6 +69,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Hypejab Authentication
 - CockroachDB Broken Access Control Direct Check
 - Symfony Secret Fragments Remote Code Execution
+- Spring Actuator Endpoints Publicly Available
+- PHPMyadmin Information Schema Disclosure
+- SSH Authorized Key Disclosure
 
 ### Changed
 - Restructure Project
