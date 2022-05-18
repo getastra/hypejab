@@ -76,4 +76,4 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 - Restructure Project
- 
+- Added JitPack Authentication Token in API Key Scanner vulns.
