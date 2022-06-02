@@ -75,6 +75,10 @@ require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information 
 require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/Bower.php';
+require __DIR__ . '/../src/app/vulnerabilities/DockerfileExample.php';
+require __DIR__ . '/../src/app/vulnerabilities/RubyOnRailsSecretKeyDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/LaravelTelescope.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
