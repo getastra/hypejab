@@ -58,6 +58,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Atlassian Confluence Information Disclosure
 - Vulnerability: Nginx Merge Slashes Path Traversal
 - Vulnerability: Debug Mode Enabled
+- Vulnerability: CVE-2022-26134
 
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions

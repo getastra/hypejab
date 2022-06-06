@@ -60,3 +60,4 @@ docker-compose up
 - Atlassian Confluence Information Disclosure
 - Nginx Merge Slashes Path Traversal
 - Debug Mode Enabled
+- CVE-2022-26134
