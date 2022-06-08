@@ -31,7 +31,6 @@ require __DIR__ . '/../src/app/vulnerabilities/SSRF.php';
 require __DIR__ . '/../src/app/vulnerabilities/Magento Config File.php';
 require __DIR__ . '/../src/app/vulnerabilities/Magento Downloader.php';
 require __DIR__ . '/../src/app/vulnerabilities/Swagger Config File.php';
-require __DIR__ . '/../src/app/vulnerabilities/WP Debug.php';
 require __DIR__ . '/../src/app/vulnerabilities/AWStats Script.php';
 require __DIR__ . '/../src/app/vulnerabilities/API Key Scanner.php';
 require __DIR__ . '/../src/app/vulnerabilities/Database Connection String.php';
@@ -50,7 +49,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Arbitrary File Read Next JS.php';
 require __DIR__ . '/../src/app/vulnerabilities/Chrome Logger Information Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Apache Tomcat Examples Directory.php';
 require __DIR__ . '/../src/app/vulnerabilities/Merurial Repository.php';
-require __DIR__ . '/../src/app/vulnerabilities/Flask Debug Mode.php';
 require __DIR__ . '/../src/app/vulnerabilities/Drupal Backup Migrate.php';
 require __DIR__ . '/../src/app/vulnerabilities/Log4j RCE.php';
 require __DIR__ . '/../src/app/vulnerabilities/X-Powered-By Header.php';
@@ -73,6 +71,9 @@ require __DIR__ . '/../src/app/vulnerabilities/SpringActuatorEndpointsExposed.ph
 require __DIR__ . '/../src/app/vulnerabilities/GitHub Workflow Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
+require __DIR__ . '/../src/app/vulnerabilities/Debug Modes.php';
+require __DIR__ . '/../src/app/vulnerabilities/CVE-2022-26134.php';
+require __DIR__ . '/../src/app/vulnerabilities/Probely.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 
