@@ -73,6 +73,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information 
 require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
 require __DIR__ . '/../src/app/vulnerabilities/Debug Modes.php';
 require __DIR__ . '/../src/app/vulnerabilities/CVE-2022-26134.php';
+require __DIR__ . '/../src/app/vulnerabilities/Probely.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 
