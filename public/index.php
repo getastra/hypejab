@@ -75,6 +75,8 @@ require __DIR__ . '/../src/app/vulnerabilities/Atlassian Confluence Information 
 require __DIR__ . '/../src/app/vulnerabilities/Nginx Merge Slashes Path Traversal.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/wordpress database backup.php';
+
 
 // Define Custom Error Handler
 $customErrorHandler = function (
