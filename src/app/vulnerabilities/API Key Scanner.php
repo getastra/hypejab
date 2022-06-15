@@ -13,6 +13,7 @@ $app->get(
         Aadhaar number = 0123 4567 8901<br>
         PAN Number = QLQPS1836D<br>
         Social Security Number = 078-05-1120<br>
+        JitPack Authentication Token = jp_hjhggfhgfvdbhfsdhg32<br>
         </p>');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);

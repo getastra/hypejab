@@ -5,7 +5,47 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/flaskDebug',
+    '/wp-debug',
+    function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
+        $response->getBody()->write('<b>Parse error</b> missing \')\' on line <b>189</b>');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
+    '/laravel-debug',
+    function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
+        $response->getBody()->write('<title>Whoops! There was an error.</title><br><span class="exc-title-primary">ErrorException</span>');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(500);
+    }
+);
+
+$app->get(
+    '/asp-debug',
+    function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
+        $response->getBody()->write('<span><H1>Server Error in \'/\' Application.<hr width=100% size=1 color=silver></H1><br><h2> <i>Configuration Error</i> </h2>');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(500);
+    }
+);
+
+$app->get(
+    '/django-debug',
+    function (Request $request, Response $response) {
+        require __DIR__ . '/../login/checkSession.php';
+        $response->getBody()->write('<h1>TypeError at /app </h1><br><th>Exception Type:</th> <td>TypeError</td>');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(500);
+    }
+);
+
+$app->get(
+    '/flask-debug',
     function (Request $request, Response $response) {
         require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('
@@ -38,6 +78,6 @@ $app->get(
       </div>
       ');
         return $response->withHeader("content-type", "text/html")
-                        ->withStatus(200);
+                        ->withStatus(500);
     }
 );

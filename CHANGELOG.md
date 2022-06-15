@@ -25,7 +25,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Magento Config File
 - Vulnerability: Magento Downloader
 - Vulnerability: Swagger Config File
-- Vulnerability: Wordpress Debugger
 - Vulnerability: AWStats Script
 - Vulnerability: API Key Scanner
 - Vulnerability: Database Connection String
@@ -42,7 +41,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Chrome Logger Information Disclosures
 - Vulnerability: Apache Tomcat Examples Directory
 - Vulnerability: Merurial Repository Found
-- Vulnerability: Flask Debug Mode
 - Vulnerability: Drupal backup_migrate
 - Vulnerability: Log4j RCE
 - Vulnerability: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
@@ -59,6 +57,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: GitHub Workflow Disclosure
 - Vulnerability: Atlassian Confluence Information Disclosure
 - Vulnerability: Nginx Merge Slashes Path Traversal
+- Vulnerability: Debug Mode Enabled
+- Vulnerability: CVE-2022-26134
 
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
@@ -76,4 +76,4 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 - Restructure Project
- 
+- Added JitPack Authentication Token in API Key Scanner vulns.
