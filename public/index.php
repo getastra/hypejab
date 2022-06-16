@@ -76,6 +76,8 @@ require __DIR__ . '/../src/app/vulnerabilities/CVE-2022-26134.php';
 require __DIR__ . '/../src/app/vulnerabilities/Probely.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/wordpress database backup.php';
+
 
 // Define Custom Error Handler
 $customErrorHandler = function (
