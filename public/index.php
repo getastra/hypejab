@@ -78,6 +78,9 @@ require __DIR__ . '/../src/app/vulnerabilities/Probely.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/wordpress database backup.php';
+require __DIR__ . '/../src/app/vulnerabilities/FullServerPathDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/MagentoUnprotectedDevFiles.php';
+require __DIR__ . '/../src/app/vulnerabilities/WordpressXMLRPCEnabled.php';
 
 
 // Define Custom Error Handler
