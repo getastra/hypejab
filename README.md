@@ -61,3 +61,4 @@ docker-compose up
 - Nginx Merge Slashes Path Traversal
 - Debug Mode Enabled
 - CVE-2022-26134
+- Missing API Security Headers
