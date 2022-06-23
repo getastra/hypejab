@@ -84,6 +84,10 @@ require __DIR__ . '/../src/app/vulnerabilities/FullServerPathDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/MagentoUnprotectedDevFiles.php';
 require __DIR__ . '/../src/app/vulnerabilities/WordpressXMLRPCEnabled.php';
 require __DIR__ . '/../src/app/vulnerabilities/Exposed-svn-entries.php';
+require __DIR__ . '/../src/app/vulnerabilities/Bower.php';
+require __DIR__ . '/../src/app/vulnerabilities/DockerfileExample.php';
+require __DIR__ . '/../src/app/vulnerabilities/RubyOnRailsSecretKeyDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/LaravelTelescope.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
