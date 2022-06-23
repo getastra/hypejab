@@ -5,11 +5,10 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/wp-debug/',
+    '/c7cbd039-22c0-46d8-ad50-507dc3514e72.txt',
     function (Request $request, Response $response) {
-        require __DIR__ . '/../login/checkSession.php';
-        $response->getBody()->write('<b>Parse error</b> missing \')\' on line <b>189</b>');
-        return $response->withHeader("content-type", "text/html")
+        $response->getBody()->write('Probely');
+        return $response->withHeader("content-type", "text/plain")
                         ->withStatus(200);
     }
 );

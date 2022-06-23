@@ -27,7 +27,6 @@ docker-compose up
 - Magento Config File
 - Magento Downloader
 - Swagger Config File
-- Wordpress Debugger
 - AWStats Script
 - API Key Scanner
 - Database Connection String
@@ -44,7 +43,6 @@ docker-compose up
 - Chrome Logger Information Disclosure
 - Apache Tomcat Examples Directory
 - Merurial Repository Found
-- Flask Debug Mode
 - Drupal backup_migrate
 - Log4j RCE
 - Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Servers
@@ -61,3 +59,6 @@ docker-compose up
 - GitHub Workflow Disclosure
 - Atlassian Confluence Information Disclosure
 - Nginx Merge Slashes Path Traversal
+- Debug Mode Enabled
+- CVE-2022-26134
+- Missing API Security Headers
