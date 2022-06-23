@@ -80,6 +80,9 @@ require __DIR__ . '/../src/app/vulnerabilities/Missing API Security Headers.php'
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/wordpress database backup.php';
+require __DIR__ . '/../src/app/vulnerabilities/FullServerPathDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/MagentoUnprotectedDevFiles.php';
+require __DIR__ . '/../src/app/vulnerabilities/WordpressXMLRPCEnabled.php';
 require __DIR__ . '/../src/app/vulnerabilities/Exposed-svn-entries.php';
 
 // Define Custom Error Handler
