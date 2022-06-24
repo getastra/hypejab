@@ -60,7 +60,7 @@ $app->get(
 <div class="container">
   <h3>Welcome to HypeJab! 💉 😃 </h3>
   <p>HypeJab is a deliberately vulnerable web application intended for benchmarking automated scanners.</p>
-  <p>v1.1.0</p>
+  <p>v1.1.1</p>
 </div>
 
 </body>

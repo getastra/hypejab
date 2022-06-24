@@ -76,8 +76,6 @@ require __DIR__ . '/../src/app/vulnerabilities/Debug Modes.php';
 require __DIR__ . '/../src/app/vulnerabilities/CVE-2022-26134.php';
 require __DIR__ . '/../src/app/vulnerabilities/Probely.php';
 require __DIR__ . '/../src/app/vulnerabilities/Missing API Security Headers.php';
-require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
-require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/wordpress database backup.php';
 require __DIR__ . '/../src/app/vulnerabilities/FullServerPathDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/MagentoUnprotectedDevFiles.php';
@@ -87,6 +85,12 @@ require __DIR__ . '/../src/app/vulnerabilities/Bower.php';
 require __DIR__ . '/../src/app/vulnerabilities/DockerfileExample.php';
 require __DIR__ . '/../src/app/vulnerabilities/RubyOnRailsSecretKeyDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/LaravelTelescope.php';
+require __DIR__ . '/../src/app/vulnerabilities/404 Check.php';
+
+// False positives section
+require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/Retrieved from Cache.php';
 
 // Define Custom Error Handler
 $customErrorHandler = function (
