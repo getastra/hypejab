@@ -63,6 +63,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
+- FP: Retrieved from Cache
 - GIF Favicon
 - Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
 - Software Versions List
