@@ -81,6 +81,7 @@ require __DIR__ . '/../src/app/vulnerabilities/FP/Dangerous JS Functions.php';
 require __DIR__ . '/../src/app/vulnerabilities/wordpress database backup.php';
 require __DIR__ . '/../src/app/vulnerabilities/Exposed-svn-entries.php';
 require __DIR__ . '/../src/app/vulnerabilities/Session Token.php';
+require __DIR__ . '/../src/app/vulnerabilities/Exposed-docker-registry.php';
 
 
 // Define Custom Error Handler
