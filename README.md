@@ -11,54 +11,78 @@ docker-compose up
 ```
 ## Vulnerabilities
 
-- Host Header Injection
-- Apache Tomcat Ghostcat CVE 2020-1938
-- Hidden File Sample
-- JSP Samples Page
-- Exposed Panels - CrushFTP
-- Default Admin Login - Apache Axis2
-- Publicly accessible phpinfo & php configuration files
-- Unauthenticated Gitlab SSRF CVE 2021-22214 Demonstration
-- Software Versions List
-- Wordpress Username Enumeration
-- Drupal Username Enumeration
-- Magento Cacheleak
-- SSRF - Parameter Based
-- Magento Config File
-- Magento Downloader
-- Swagger Config File
-- AWStats Script
-- API Key Scanner
-- Database Connection String
-- MySQL Username Disclosure
-- 403 Bypass
-- Firebase Database Unauthorized Access
-- Base Tag Hijacking
-- Magento API Anonymous Access
-- Out-of-Band XXE
-- Apache Cassandra Unauthorized Access
-- Laravel Ignition Reflected XSS
-- S3 Bucket Publicly Accessible
-- Arbitrary File Read Next.js
-- Chrome Logger Information Disclosure
-- Apache Tomcat Examples Directory
-- Merurial Repository Found
-- Drupal backup_migrate
-- Log4j RCE
-- Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Servers
-- Dangerous JS Functions
-- WebDAV Directory Has Write Permissions
-- wpeprivate Config Information Disclosure
-- Bazaar Repository Found
-- Server Side Template Injection (Django)
-- SQLI Auth Bypass
-- Forced Browsing Auth Bypass
-- Parameter Modification Auth Bypass
-- Spring4shell (CVE-2022-22965)
-- Adminer Panel Exposed
-- GitHub Workflow Disclosure
-- Atlassian Confluence Information Disclosure
-- Nginx Merge Slashes Path Traversal
-- Debug Mode Enabled
-- CVE-2022-26134
-- Missing API Security Headers
+ ## Authenticated Vulnerabilities
+ 
+ - 403 Bypass 
+ - Apache Axis2 Default Login 
+ - Apache Tomcat Ghostcat CVE 2020-1938 
+ - Atlassian Confluence Information Disclosure 
+ - Base Tag Hijacking 
+ - Chrome Logger Information Disclosure 
+ - CVE-2022-26134 
+ - Database Connection String 
+ - Debug Modes 
+ - Exposed Panels - CrushFTP 
+ - Firebase-Database-Url-Disclosure 
+ - Forced Browsing Auth Bypass 
+ - Hidden File Sample 
+ - JSP Samples Page 
+ - Merurial Repository 
+ - Nginx Merge Slashes Path Traversal 
+ - OAST XXE 
+ - Parameter Modification Auth Bypass 
+ - S3 Bucket Publicly Accessible 
+ - Session ID Modification Auth Bypass 
+ - Software Versions 
+ - Spring4shell 
+ - SQLI Auth Bypass 
+ - SSRF 
+ - Unauthenticated Gitlab SSRF CVE 2021-22214 
+
+  ## Un-Authenticated Vulnerabilities
+
+- Apache Cassandra Unauthorized Access 
+- Apache Tomcat Examples Directory 
+- API Key Scanner 
+- ApplicationError500 
+- Arbitrary File Read Next JS 
+- AWStats Script 
+- Bazaar Repository 
+- Bower 
+- CockroachDBBrokenAccess 
+- Dangerous JS Functions 
+- DockerfileExample 
+- Drupal Backup Migrate 
+- Drupal Username Enumeration 
+- Exposed-svn-entries 
+- FullServerPathDisclosure 
+- GitCredentialsDisclosure 
+- GitHub Workflow Disclosure 
+- Host Header Injection 
+- Laravel Log File 
+- Laravel XSS 
+- LaravelTelescope 
+- Log4j RCE 
+- Magento API Anonymous Access 
+- Magento Cacheleak 
+- Magento Config File 
+- Magento Downloader 
+- MagentoUnprotectedDevFiles 
+- Missing API Security Headers 
+- MySQL Username Disclosure 
+- PHPMyadminInformationSchemaDisclosure 
+- Probely 
+- RubyOnRailsSecretKeyDisclosure 
+- Server Side Template Injection 
+- SpringActuatorEndpointsExposed 
+- SSHAuthorizedKeysDisclosure 
+- Swagger Config File 
+- SymfonySecretFragment 
+- WebDAVRoutes 
+- wordpress database backup 
+- Wordpress Username Enumeration 
+- wordpress-logs-exposed 
+- WordpressXMLRPCEnabled 
+- WP-Media-Enum 
+- wpeprivate Config Info Disclosure 
+- X-Powered-By Header 
