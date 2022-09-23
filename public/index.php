@@ -86,7 +86,7 @@ require __DIR__ . '/../src/app/vulnerabilities/DockerfileExample.php';
 require __DIR__ . '/../src/app/vulnerabilities/RubyOnRailsSecretKeyDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/LaravelTelescope.php';
 require __DIR__ . '/../src/app/vulnerabilities/404 Check.php';
-require __DIR__ . '/../src/app/vulnerabilities/Detectify.php';
+require __DIR__ . '/../src/app/vulnerabilities/server-config.php';
 
 // False positives section
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
