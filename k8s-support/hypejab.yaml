@@ -1,0 +1,62 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hypejab-1
+  namespace: hypejab
+  labels:
+    hypejab: "1"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      hypejab: "1"
+  template:
+    metadata:
+      name: hypejab-t-1
+      labels:
+        hypejab: "1"
+    spec:
+      containers:
+        - name: hypejab-nginx
+          # resources:
+            # requests:
+            #   cpu: 1m
+            #   memory: 500Mi
+            # limits:
+            #   cpu: 1m
+            #   memory: 500Mi
+          image: <nginx image name>
+          ports:
+            - name: c-port
+              containerPort: 80
+        - name: hypejab-php
+          # resources:
+            # requests:
+            #   cpu: 1m
+            #   memory: 500Mi
+            # limits:
+            #   cpu: 1m
+            #   memory: 500Mi
+          image: <php image name>
+          ports:
+            - name: php-port
+              containerPort: 9000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hypejab-1-svc
+  namespace: hypejab
+  labels:
+    hypejab: "svc-1"
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: c-port
+  selector:
+    hypejab: "1"
+  
