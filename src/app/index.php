@@ -53,6 +53,7 @@ $app->get(
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/hypejablogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="/hypejablogin2"><span class="glyphicon glyphicon-log-in"></span> Login2</a></li>
     </ul>
   </div>
 </nav>
