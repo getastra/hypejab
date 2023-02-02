@@ -75,3 +75,4 @@ Note: As Hypejab is an intentionally vulnerable microservice, k8s-support/np.yam
 - CVE-2022-26134
 - Missing API Security Headers
 - GraphQL API Introspection
+- OOB XXE
