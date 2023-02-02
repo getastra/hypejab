@@ -9,6 +9,18 @@ git clone https://github.com/ricekot/hypejab.git
 cd hypejab
 docker-compose up
 ```
+
+## K8s deployment
+- create a name space name `hypejab`
+- Create nginx docker image using `docker build -f Dockerfile.nginx . -t <image name>:<image tag>`
+- Create php micro service docker image using `docker build -f Dockerfile . -t <image name>:<image tag>`
+- Replace the name of `nginx docker image` and `php micro-service docker image` in the `k8s-support/hypejab.yaml` file.
+- Apply `kubectl apply -f k8s-support/hypejab.yaml`
+
+```
+Note: As Hypejab is an intentionally vulnerable microservice, k8s-support/np.yaml file provides network policy that restricts any egress network from the pod for the security of other resources deployed in the cluster.
+```
+
 ## Vulnerabilities
 
 - Host Header Injection
@@ -62,3 +74,5 @@ docker-compose up
 - Debug Mode Enabled
 - CVE-2022-26134
 - Missing API Security Headers
+- GraphQL API Introspection
+- OOB XXE

@@ -53,6 +53,7 @@ $app->get(
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/hypejablogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="/hypejablogin2"><span class="glyphicon glyphicon-log-in"></span> Login2</a></li>
     </ul>
   </div>
 </nav>
@@ -60,7 +61,7 @@ $app->get(
 <div class="container">
   <h3>Welcome to HypeJab! 💉 😃 </h3>
   <p>HypeJab is a deliberately vulnerable web application intended for benchmarking automated scanners.</p>
-  <p>v1.1.1</p>
+  <p>v1.1.3</p>
 </div>
 
 </body>

@@ -40,7 +40,7 @@ require __DIR__ . '/../src/app/vulnerabilities/403 Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Firebase-Database-Url-Disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/Base Tag Hijacking.php';
 require __DIR__ . '/../src/app/vulnerabilities/Magento API Anonymous Access.php';
-require __DIR__ . '/../src/app/vulnerabilities/OAST XXE.php';
+require __DIR__ . '/../src/app/vulnerabilities/OOB XXE.php';
 require __DIR__ . '/../src/app/vulnerabilities/Laravel Log File.php';
 require __DIR__ . '/../src/app/vulnerabilities/Apache Cassandra Unauthorized Access.php';
 require __DIR__ . '/../src/app/vulnerabilities/Laravel XSS.php';
@@ -87,6 +87,8 @@ require __DIR__ . '/../src/app/vulnerabilities/RubyOnRailsSecretKeyDisclosure.ph
 require __DIR__ . '/../src/app/vulnerabilities/LaravelTelescope.php';
 require __DIR__ . '/../src/app/vulnerabilities/404 Check.php';
 require __DIR__ . '/../src/app/vulnerabilities/server-config.php';
+require __DIR__ . '/../src/app/vulnerabilities/text4shell.php';
+require __DIR__ . '/../src/app/vulnerabilities/GraphQL Introspection.php';
 
 // False positives section
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
