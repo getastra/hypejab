@@ -36,6 +36,36 @@ $app->get(
 );
 
 
+$app->get(
+    '/hypejablogin3',
+    function (Request $request, Response $response) {
+        if (!isset($_SERVER['PHP_AUTH_USER'])) {
+            // If no username provided, present the auth challenge.
+            header('WWW-Authenticate: Basic realm="My Website"');
+            header('HTTP/1.0 401 Unauthorized');
+            // User will be presented with the username/password prompt
+            // If they hit cancel, they will see this access denied message.
+            echo '<p>Access denied. You did not enter a password.</p>';
+            exit; // Be safe and ensure no other content is returned.
+        }
+        
+        // If we get here, username was provided. Check password.
+        if ($_SERVER['PHP_AUTH_PW'] == 'heisenberg') {
+            session_start();
+            $_SESSION['user'] = 'Heisenberg';
+            $_SESSION['start'] = time();
+            $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+            header("Location: /loginPoll");
+            die();
+        } else {
+            $response->getBody()->write('Wrong username or password.');
+            return $response->withHeader("content-type", "text/html")
+                            ->withStatus(200);
+        }
+    }
+);
+
+
 $app->post(
     '/hypejabloginpassword',
     function (Request $request, Response $response) {
