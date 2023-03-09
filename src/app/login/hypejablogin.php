@@ -90,7 +90,7 @@ $app->post(
     }
 );
 
-$app->get(
+$app->post(
     '/hypejablogout',
     function (Request $request, Response $response) {
         session_start();
