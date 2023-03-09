@@ -35,7 +35,7 @@ $app->get(
                   <li class="active"><a href="/">Home</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/hypejablogout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                  <li><form method="POST" action="/hypejablogout"><button type="submit"><span class="glyphicon glyphicon-log-in"></span> Logout</button></li>
                 </ul>
               </div>
             </nav>
