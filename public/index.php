@@ -89,6 +89,7 @@ require __DIR__ . '/../src/app/vulnerabilities/404 Check.php';
 require __DIR__ . '/../src/app/vulnerabilities/server-config.php';
 require __DIR__ . '/../src/app/vulnerabilities/text4shell.php';
 require __DIR__ . '/../src/app/vulnerabilities/GraphQL Introspection.php';
+require __DIR__ . '/../src/app/vulnerabilities/json-web-key-set-disclosure.php';
 
 // False positives section
 require __DIR__ . '/../src/app/vulnerabilities/FP/X-Powered-By Header.php';
