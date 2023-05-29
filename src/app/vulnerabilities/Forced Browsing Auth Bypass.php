@@ -5,9 +5,8 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/navSiteAdmin/',
+    '/Forced-Browsing-Admin/',
     function (Request $request, Response $response, $args) {
-        require __DIR__ . '/../login/checkSession.php';
 
         $response->getBody()->write('
 <html>
@@ -19,17 +18,6 @@ $app->get(
     </head>
     <body>
         <h1>Admin Panel</h1>
-        <h4>Manage Users:</h4>
-        <table>
-            <tr>
-                <th>Carlos</th>
-                <td><button name="delete" value="delete">Delete</button></td>
-            </tr>
-            <tr>
-                <th>Peter</th>
-                <td><button name="delete" value="delete">Delete</button></td>
-            </tr>
-        <table>
     </body>
 </html>
     ');
