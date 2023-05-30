@@ -8,6 +8,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## Unreleased
 - K8s support
 - Login via HTTP basic auth
+- Added Path Traversal In API Route vulnerability.
 
 ### Added
 - sitemap.xml
