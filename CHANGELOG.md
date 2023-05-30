@@ -8,6 +8,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## Unreleased
 - K8s support
 - Login via HTTP basic auth
+- Added Path Traversal In API Route vulnerability.
 
 ### Added
 - sitemap.xml
@@ -62,7 +63,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Vulnerability: Debug Mode Enabled
 - Vulnerability: CVE-2022-26134
 - Vulnerability: Missing API Security Headers
-- Vulnerability: Path Traversal In API Route
 
 - FP: Information via "X-Powered-By" HTTP Response Header Field(s) Leaked By Server
 - FP: Dangerous JS Functions
