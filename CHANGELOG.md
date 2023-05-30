@@ -6,10 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+
+## [0.0.2] - 2023-05-30
+
+### Changed
+- `Forced Browsing Auth Bypass.php` path updated to `/Forced-Browsing-Admin/`
+
+### Added
 - K8s support
 - Login via HTTP basic auth
 - Added Path Traversal In API Route vulnerability.
 
+## [0.0.1] - 2021-07-21
 ### Added
 - sitemap.xml
 - Dockerfile and docker-compose.yml
