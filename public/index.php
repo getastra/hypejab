@@ -58,6 +58,7 @@ require __DIR__ . '/../src/app/vulnerabilities/Bazaar Repository.php';
 require __DIR__ . '/../src/app/vulnerabilities/Server Side Template Injection.php';
 require __DIR__ . '/../src/app/vulnerabilities/SQLI Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Forced Browsing Auth Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/Content-type-mismatch-to-reponse-body.php';
 require __DIR__ . '/../src/app/vulnerabilities/Parameter Modification Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Session ID Modification Auth Bypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/Spring4shell.php';
