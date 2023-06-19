@@ -7,7 +7,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 ### Added
-- added Content-type-mismatch-to-reponse-body.php for testing new passive rule 1204704.
+- added Content-type-mismatch-to-reponse-body.php for testing new passive rule 1204704(content-type-mismatch-to-response-type.passive.js).
 
 ## [0.0.2] - 2023-05-30
 
