@@ -10,6 +10,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Removed
 - `github workflow` removed as it was outdated.
 
+### Changed
+- `Dockerfile` restructuring for better performance and faster build.
+
+
 ## [0.0.3] - 2023-06-19
 ### Added
 - added Content-type-mismatch-to-reponse-body.php for testing new passive rule 1204704(content-type-mismatch-to-response-type.passive.js).

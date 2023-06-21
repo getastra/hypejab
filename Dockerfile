@@ -1,6 +1,8 @@
-FROM --platform=linux/amd64 php:fpm
-RUN apt update -y && apt install -y git unzip
+FROM --platform=linux/amd64 composer:2.5.8 as composer
+FROM --platform=linux/amd64 php:fpm-alpine3.18
+COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 WORKDIR /app
-COPY . /app
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+COPY composer.json ./composer.json
+COPY composer.lock ./composer.lock
 RUN composer i --no-dev
+COPY . /app
