@@ -5,4 +5,5 @@ WORKDIR /app
 COPY composer.json ./composer.json
 COPY composer.lock ./composer.lock
 RUN composer i --no-dev
+USER www-data
 COPY . /app

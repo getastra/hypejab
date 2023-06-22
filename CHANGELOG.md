@@ -12,6 +12,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 - `Dockerfile` restructuring for better performance and faster build.
+- Start both php-fpm and nginx container as `non-root` user
 
 
 ## [0.0.3] - 2023-06-19
