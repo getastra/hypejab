@@ -45,7 +45,7 @@ require __DIR__ . '/../src/app/vulnerabilities/laravelLogFile.php';
 require __DIR__ . '/../src/app/vulnerabilities/apacheCassandraUnauthorizedAccess.php';
 require __DIR__ . '/../src/app/vulnerabilities/laravelXss.php';
 require __DIR__ . '/../src/app/vulnerabilities/s3BucketPubliclyAccessible.php';
-require __DIR__ . '/../src/app/vulnerabilities/arbitraryFileReadNextJs.phpp';
+require __DIR__ . '/../src/app/vulnerabilities/arbitraryFileReadNextJs.php';
 require __DIR__ . '/../src/app/vulnerabilities/chromeLoggerInformationDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/apacheTomcatExamplesDirectory.php';
 require __DIR__ . '/../src/app/vulnerabilities/merurialRepository.php';
