@@ -13,13 +13,23 @@ docker-compose up
 
 #### K8s deployment
 - create a name space name `hypejab`
-- Create nginx docker image using `docker build -f Dockerfile.nginx . -t <image name>:<image tag>`
-- Create php micro service docker image using `docker build -f Dockerfile . -t <image name>:<image tag>`
-- Replace the name of `nginx docker image` and `php micro-service docker image` in the `k8s-support/hypejab.yaml` file.
-- Apply `kubectl apply -f k8s-support/hypejab.yaml`
+- Create nginx docker image using 
+  ```bash
+  docker build -f Dockerfile.nginx . -t <image name>:<image tag>
+  ```
+- Create php micro service docker image using 
+  ```bash
+  docker build -f Dockerfile . -t <image name>:<image tag>
+  ```
+- Replace the name of `<nginx image name>` and `<php image name>` in the `k8s-support/hypejab.yaml` file.
+- Apply 
+  ```bash
+  kubectl apply -f k8s-support/hypejab.yaml
+  ```
 
+**Note**
 ```
-Note: As Hypejab is an intentionally vulnerable microservice, k8s-support/np.yaml file provides network policy that restricts any egress network from the pod for the security of other resources deployed in the cluster.
+ As Hypejab is an intentionally vulnerable microservice, k8s-support/np.yaml file provides network policy that restricts any egress network from the pod for the security of other resources deployed in the cluster.
 ```
 
 
