@@ -15,3 +15,15 @@ $app->get(
                         ->withStatus(200);
     }
 );
+
+
+$app->get(
+    '/Unauthenticated-Mismatch-Content-Type-Header-to-Body/',
+    function (Request $request, Response $response, $args) {
+        $response->getBody()->write('{
+            "hello":"world"
+        }');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
