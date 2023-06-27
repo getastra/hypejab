@@ -7,6 +7,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+
+
+## [0.0.4] - 2023-06-27
+### Added
+- `Unauthenticated-Mismatch-Content` support added
 ### Removed
 - `github workflow` removed as it was outdated.
 
