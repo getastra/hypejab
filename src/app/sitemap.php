@@ -21,7 +21,7 @@ $app->get(
         $sitemap = '<?xml version="1.0" encoding="UTF-8"?>'.PHP_EOL
             .'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             .PHP_EOL;
-        $baseurl = $request->getUri()->getScheme().'://'.$request->getUri()
+        $baseurl = 'https'.'://'.$request->getUri()
                 ->getHost().($request->getUri()->getHost() == "localhost" ? ':'
                 .$request->getUri()->getPort() : '');
         foreach ($routes as $route) {

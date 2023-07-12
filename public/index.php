@@ -92,6 +92,8 @@ require __DIR__ . '/../src/app/vulnerabilities/text4shell.php';
 require __DIR__ . '/../src/app/vulnerabilities/graphqlIntrospection.php';
 require __DIR__ . '/../src/app/vulnerabilities/jsonWebKeySetDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/pathTraversalInApiRoute.php';
+require __DIR__ . '/../src/app/vulnerabilities/httpVerbTempering.php';
+
 
 // False positives section
 require __DIR__ . '/../src/app/vulnerabilities/FP/xpoweredbyHeader.php';

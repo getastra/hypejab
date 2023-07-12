@@ -8,6 +8,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+#### Added
+- `http-verb-tempering` support added
+
+#### Changed
+- Sitemap.xml will have `https` by default.
+
 
 ## [0.0.4] - 2023-06-27
 ### Added
