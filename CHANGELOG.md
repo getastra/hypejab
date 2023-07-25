@@ -8,6 +8,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.0.6] - 2023-07-25
+
+### Added
+- Adds a file upload route to test file upload automation.
+
 ## [0.0.5] - 2023-07-24
 ### Changed
 - Adds a URL inside `firebaseDatabaseUrlDisclosure.php`.
