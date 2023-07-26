@@ -10,10 +10,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Added
 - `http-verb-tempering` support added
-
 #### Changed
 - Sitemap.xml will have `https` by default.
 
+## [0.0.5] - 2023-07-24
+### Changed
+- Adds a URL inside `firebaseDatabaseUrlDisclosure.php`.
+- Changes names of many files to camel case.
 
 ## [0.0.4] - 2023-06-27
 ### Added

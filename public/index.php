@@ -75,7 +75,6 @@ require __DIR__ . '/../src/app/vulnerabilities/atlassianConfluenceInformationDis
 require __DIR__ . '/../src/app/vulnerabilities/nginxMergeSlashesPathTraversal.php';
 require __DIR__ . '/../src/app/vulnerabilities/debugModes.php';
 require __DIR__ . '/../src/app/vulnerabilities/cve202226134.php';
-require __DIR__ . '/../src/app/vulnerabilities/probely.php';
 require __DIR__ . '/../src/app/vulnerabilities/missingApiSecurityHeaders.php';
 require __DIR__ . '/../src/app/vulnerabilities/wordpressDatabaseBackup.php';
 require __DIR__ . '/../src/app/vulnerabilities/fullServerPathDisclosure.php';
