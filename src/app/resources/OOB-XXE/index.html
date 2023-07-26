@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOB XXE Dashboard</title>
+    <script>
+      function triggerXmlHttpRequest(element) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+        };
+        var body = `<?xml version="1.0" encoding="UTF-8"?><stockCheck><productId>${element.id}</productId><storeId>1</storeId></stockCheck>`;
+        xhttp.open("POST", "oob-xxe", true);
+        xhttp.setRequestHeader("Content-Type", 'application/xml');
+        xhttp.send(body);
+      }
+    </script>
+  </head>
+  <body>
+    <img src="/resources/images/homegym.jpg" alt="Home Gym" />
+    <br />
+    <div>
+      <button id="2" onclick="triggerXmlHttpRequest(this)">Check stock</button>
+    </div>
+    <div id="demo"></div>
+  </body>
+</html>

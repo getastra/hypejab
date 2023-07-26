@@ -1,72 +1,129 @@
 <?php
 
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Log\LoggerInterface;
 use Slim\Factory\AppFactory;
+use Slim\Psr7\Response;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
 $app = AppFactory::create();
-
+$app->addBodyParsingMiddleware();
 $app->addRoutingMiddleware();
 
-$app->get(
-  '/',
-  function (Request $request, Response $response, array $args) {
-      $response->getBody()->write(
-        "Welcome to HypeJab! 💉 😃 <br>"
-        . "HypeJab is a deliberately vulnerable web application"
-        . " intended for benchmarking automated scanners."
-      );
-      return $response;
-  }
-);
+require __DIR__ . '/../src/app/index.php';
+require __DIR__ . '/../src/app/robots.php';
+require __DIR__ . '/../src/app/sitemap.php';
+require __DIR__ . '/../src/app/login/hypejablogin.php';
+require __DIR__ . '/../src/app/login/loginPoll.php';
+require __DIR__ . '/../src/app/vulnerabilities/hostHeaderInjection.php';
+require __DIR__ . '/../src/app/vulnerabilities/apacheTomcatGhostcatCve20201938.php';
+require __DIR__ . '/../src/app/vulnerabilities/hiddenFileSample.php';
+require __DIR__ . '/../src/app/vulnerabilities/jspSamplesPage.php';
+require __DIR__ . '/../src/app/vulnerabilities/exposedPanelsCrushftp.php';
+require __DIR__ . '/../src/app/vulnerabilities/apacheAxis2DefaultLogin.php';
+require __DIR__ . '/../src/app/vulnerabilities/unauthenticatedGitlabSsrfCve202122214.php';
+require __DIR__ . '/../src/app/vulnerabilities/softwareVersions.php';
+require __DIR__ . '/../src/app/vulnerabilities/wordpressUsernameEnumeration.php';
+require __DIR__ . '/../src/app/vulnerabilities/drupalUsernameEnumeration.php';
+require __DIR__ . '/../src/app/vulnerabilities/magentoCacheleak.php';
+require __DIR__ . '/../src/app/vulnerabilities/SSRF.php';
+require __DIR__ . '/../src/app/vulnerabilities/magentoConfigFile.php';
+require __DIR__ . '/../src/app/vulnerabilities/magentoDownloader.php';
+require __DIR__ . '/../src/app/vulnerabilities/swaggerConfigFile.php';
+require __DIR__ . '/../src/app/vulnerabilities/awstatsScript.php';
+require __DIR__ . '/../src/app/vulnerabilities/apiKeyScanner.php';
+require __DIR__ . '/../src/app/vulnerabilities/databaseConnectionString.php';
+require __DIR__ . '/../src/app/vulnerabilities/mysqlUsernameDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/wpMediaEnum.php';
+require __DIR__ . '/../src/app/vulnerabilities/403Bypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/firebaseDatabaseUrlDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/baseTagHijacking.php';
+require __DIR__ . '/../src/app/vulnerabilities/magentoApiAnonymousAccess.php';
+require __DIR__ . '/../src/app/vulnerabilities/oobXxe.php';
+require __DIR__ . '/../src/app/vulnerabilities/laravelLogFile.php';
+require __DIR__ . '/../src/app/vulnerabilities/apacheCassandraUnauthorizedAccess.php';
+require __DIR__ . '/../src/app/vulnerabilities/laravelXss.php';
+require __DIR__ . '/../src/app/vulnerabilities/s3BucketPubliclyAccessible.php';
+require __DIR__ . '/../src/app/vulnerabilities/arbitraryFileReadNextJs.php';
+require __DIR__ . '/../src/app/vulnerabilities/chromeLoggerInformationDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/apacheTomcatExamplesDirectory.php';
+require __DIR__ . '/../src/app/vulnerabilities/merurialRepository.php';
+require __DIR__ . '/../src/app/vulnerabilities/drupalBackupMigrate.php';
+require __DIR__ . '/../src/app/vulnerabilities/log4jRce.php';
+require __DIR__ . '/../src/app/vulnerabilities/xpoweredbyHeader.php';
+require __DIR__ . '/../src/app/vulnerabilities/dangerousJsFunctions.php';
+require __DIR__ . '/../src/app/vulnerabilities/wpeprivateConfigInfoDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/bazaarRepository.php';
+require __DIR__ . '/../src/app/vulnerabilities/serverSideTemplateInjection.php';
+require __DIR__ . '/../src/app/vulnerabilities/sqliAuthBypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/forcedBrowsingAuthBypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/contentTypeMismatchToReponseBody.php';
+require __DIR__ . '/../src/app/vulnerabilities/parameterModificationAuthBypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/sessionIdModificationAuthBypass.php';
+require __DIR__ . '/../src/app/vulnerabilities/spring4shell.php';
+require __DIR__ . '/../src/app/vulnerabilities/gitCredentialsDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/webDAVRoutes.php';
+require __DIR__ . '/../src/app/vulnerabilities/cockroachDBBrokenAccess.php';
+require __DIR__ . '/../src/app/vulnerabilities/symfonySecretFragment.php';
+require __DIR__ . '/../src/app/vulnerabilities/phpMyadminInformationSchemaDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/sshAuthorizedKeysDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/springActuatorEndpointsExposed.php';
+require __DIR__ . '/../src/app/vulnerabilities/githubWorkflowDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/wordpressLogsExposed.php';
+require __DIR__ . '/../src/app/vulnerabilities/atlassianConfluenceInformationDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/nginxMergeSlashesPathTraversal.php';
+require __DIR__ . '/../src/app/vulnerabilities/debugModes.php';
+require __DIR__ . '/../src/app/vulnerabilities/cve202226134.php';
+require __DIR__ . '/../src/app/vulnerabilities/missingApiSecurityHeaders.php';
+require __DIR__ . '/../src/app/vulnerabilities/wordpressDatabaseBackup.php';
+require __DIR__ . '/../src/app/vulnerabilities/fullServerPathDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/magentoUnprotectedDevFiles.php';
+require __DIR__ . '/../src/app/vulnerabilities/wordpressXMLRPCEnabled.php';
+require __DIR__ . '/../src/app/vulnerabilities/exposedSvnEntries.php';
+require __DIR__ . '/../src/app/vulnerabilities/bower.php';
+require __DIR__ . '/../src/app/vulnerabilities/dockerfileExample.php';
+require __DIR__ . '/../src/app/vulnerabilities/rubyOnRailsSecretKeyDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/laravelTelescope.php';
+require __DIR__ . '/../src/app/vulnerabilities/404Check.php';
+require __DIR__ . '/../src/app/vulnerabilities/serverConfig.php';
+require __DIR__ . '/../src/app/vulnerabilities/text4shell.php';
+require __DIR__ . '/../src/app/vulnerabilities/graphqlIntrospection.php';
+require __DIR__ . '/../src/app/vulnerabilities/jsonWebKeySetDisclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/pathTraversalInApiRoute.php';
 
-$app->get(
-  '/sitemap.xml',
-  function (Request $request, Response $response, array $args) use ($app) {
-      $routes  = array_diff(
-        array_map(
-          function ($r) {
-              return $r->getPattern();
-          },
-          $app->getRouteCollector()->getRoutes()
-        ),
-        ['/sitemap.xml']
-      );
-      $sitemap = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL
-                 . '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-                 . PHP_EOL;
-      $baseurl = $request->getUri()->getScheme() . '://' . $request->getUri()
-                                                                   ->getHost()
-                 . ':' . $request->getUri()->getPort();
-      foreach ($routes as $route) {
-          $sitemap .= '<url>' . PHP_EOL;
-          $sitemap .= '    <loc>' . $baseurl . $route . '</loc>' . PHP_EOL;
-          $sitemap .= '</url>' . PHP_EOL;
-      }
-      $sitemap .= '</urlset>';
-      $response->getBody()->write($sitemap);
-      return $response->withHeader("content-type", "application/xml");
-  }
-);
+// False positives section
+require __DIR__ . '/../src/app/vulnerabilities/FP/xpoweredbyHeader.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/dangerousJsFunctions.php';
+require __DIR__ . '/../src/app/vulnerabilities/FP/retrievedFromCache.php';
 
-$app->get(
-  '/host-header-injection/redirect',
-  function (Request $request, Response $response, array $args) {
-      return $response->withHeader('Location', "http://{$_SERVER['HTTP_HOST']}")
-                      ->withStatus(302);
-  }
-);
+// Define Custom Error Handler
+$customErrorHandler = function (
+    ServerRequestInterface $request,
+    Throwable $exception,
+    bool $displayErrorDetails,
+    bool $logErrors,
+    bool $logErrorDetails,
+    ?LoggerInterface $logger = null
+) use ($app) {
+    //$logger->error($exception->getMessage());
 
-$app->get(
-  '/host-header-injection/html-poisoning',
-  function (Request $request, Response $response, array $args) {
-      $response->getBody()->write(
-        "Click <a href = http://{$_SERVER['HTTP_HOST']}>here</a> for treats."
-      );
-      return $response;
-  }
-);
+    $payload = ['error' => $exception->getMessage()];
+
+    $response = $app->getResponseFactory()->createResponse();
+    $response->getBody()->write(
+        json_encode($payload, JSON_UNESCAPED_UNICODE)
+    );
+
+    if ($exception->getMessage() == 'Not found.') {
+        return $response->withHeader("content-type", "application/json")
+                        ->withStatus(404);
+    }
+    return $response->withHeader("content-type", "application/json");
+};
+
+// Add Error Middleware
+$errorMiddleware = $app->addErrorMiddleware(true, true, true);
+$errorMiddleware->setDefaultErrorHandler($customErrorHandler);
 
 $app->run();

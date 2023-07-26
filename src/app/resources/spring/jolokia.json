@@ -1,0 +1,37 @@
+{
+    "request": {
+        "type": "version"
+    },
+    "value": {
+        "agent": "1.7.1",
+        "protocol": "7.2",
+        "config": {
+            "listenForHttpService": "true",
+            "authIgnoreCerts": "false",
+            "agentId": "172.18.0.1-11647-47be0f9b-servlet",
+            "debug": "false",
+            "agentType": "servlet",
+            "policyLocation": "classpath:\/jolokia-access.xml",
+            "agentContext": "\/jolokia",
+            "serializeException": "false",
+            "mimeType": "text\/plain",
+            "dispatcherClasses": "org.jolokia.http.Jsr160ProxyNotEnabledByDefaultAnymoreDispatcher",
+            "multicastGroup": "239.192.48.84",
+            "authMode": "basic",
+            "authMatch": "any",
+            "streaming": "true",
+            "canonicalNaming": "true",
+            "historyMaxEntries": "10",
+            "allowErrorDetails": "true",
+            "allowDnsReverseLookup": "true",
+            "realm": "jolokia",
+            "includeStackTrace": "true",
+            "multicastPort": "24884",
+            "useRestrictorService": "false",
+            "debugMaxEntries": "100"
+        },
+        "info": {}
+    },
+    "timestamp": 1651258741,
+    "status": 200
+}
