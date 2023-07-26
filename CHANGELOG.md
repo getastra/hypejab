@@ -8,8 +8,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-#### Added
+## [0.0.6] - 2023-07-25
+
+### Added
+- Adds a file upload route to test file upload automation.
 - `http-verb-tempering` support added
+
 #### Changed
 - Sitemap.xml will have `https` by default.
 
