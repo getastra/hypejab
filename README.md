@@ -89,3 +89,4 @@ docker-compose up
 - OOB XXE
 - Path Traversal In API Route
 - Content-type mismatch to response body
+- 2FA Bypass
