@@ -65,7 +65,6 @@ $app->get(
     }
 );
 
-
 $app->get(
     '/hypejablogin4',
     function (Request $request, Response $response) {
@@ -90,8 +89,6 @@ $app->get(
                         ->withStatus(200);
     }
 );
-
-
 
 $app->post(
     '/hypejabloginpassword',
@@ -216,7 +213,6 @@ $app->post(
         }
 
         $twoFactor = $_POST['twofactor'];
-        $password = $_POST['password'];
 
         if ($twoFactor == '123456') {
             // Check the 2FA code
