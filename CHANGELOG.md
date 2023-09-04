@@ -7,7 +7,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
-
 ### Added 
 - 2FA Bypass Vulnerability  
 - added a 404 page with 200 status code
