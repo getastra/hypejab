@@ -86,6 +86,7 @@ require __DIR__ . '/../src/app/vulnerabilities/dockerfileExample.php';
 require __DIR__ . '/../src/app/vulnerabilities/rubyOnRailsSecretKeyDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/laravelTelescope.php';
 require __DIR__ . '/../src/app/vulnerabilities/404Check.php';
+require __DIR__ . '/../src/app/vulnerabilities/404with200statuscode.php';
 require __DIR__ . '/../src/app/vulnerabilities/text4shell.php';
 require __DIR__ . '/../src/app/vulnerabilities/graphqlIntrospection.php';
 require __DIR__ . '/../src/app/vulnerabilities/jsonWebKeySetDisclosure.php';
