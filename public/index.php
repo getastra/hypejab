@@ -94,6 +94,7 @@ require __DIR__ . '/../src/app/vulnerabilities/pathTraversalInApiRoute.php';
 require __DIR__ . '/../src/app/vulnerabilities/httpVerbTempering.php';
 require __DIR__ . '/../src/app/vulnerabilities/fileUpload.php';
 require __DIR__ . '/../src/app/vulnerabilities/serializedData.php';
+require __DIR__ . '/../src/app/vulnerabilities/dosDueToPaginationMisConfig.php';
 
 
 // False positives section
