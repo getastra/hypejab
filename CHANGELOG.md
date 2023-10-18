@@ -8,6 +8,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- Added PHP cURL SSRF.
+
 ## [0.0.8] - 2023-09-14
 ### Added 
 - 2FA Bypass Vulnerability  
