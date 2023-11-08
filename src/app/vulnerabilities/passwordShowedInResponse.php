@@ -5,15 +5,12 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/update-email',
+    '/profile',
     function (Request $request, Response $response) {
         $response->getBody()->write('
-        <h1>Change Email Address</h1>
-        New Email Address
-        <input type="email" />
-        Confirm New Email Address
-        <input type="email" />
-        <button>Update</button>
+        <h1>My Profile</h1>
+        <input type="email" value="say+my+name@bb.com" name="email" />
+        <input type="text" value="heisenberg" name="password" />
         ');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
