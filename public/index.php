@@ -96,6 +96,8 @@ require __DIR__ . '/../src/app/vulnerabilities/fileUpload.php';
 require __DIR__ . '/../src/app/vulnerabilities/serializedData.php';
 require __DIR__ . '/../src/app/vulnerabilities/unverifiedEmailChange.php';
 require __DIR__ . '/../src/app/vulnerabilities/passwordShowedInResponse.php';
+require __DIR__ . '/../src/app/vulnerabilities/aiApiKey.php';
+
 
 // False positives section
 require __DIR__ . '/../src/app/vulnerabilities/FP/xpoweredbyHeader.php';
