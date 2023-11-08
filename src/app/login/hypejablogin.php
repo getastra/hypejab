@@ -3,6 +3,7 @@
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
+use Firebase\JWT\JWT;
 
 $app->get(
     '/hypejablogin',
@@ -81,12 +82,52 @@ $app->get(
 );
 
 $app->get(
+    '/hypejablogin5',
+    function (Request $request, Response $response) {
+        session_start();
+        if (isset($_SESSION['user'])) {
+            header("Location: /loginPoll");
+            die();
+        }
+        $html = file_get_contents(__DIR__ . "/../resources/hypejab-login/hypejabloginJWT.html");
+        $response->getBody()->write($html);
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
     '/hypejablogin2fa',
     function (Request $request, Response $response) {
         $html = file_get_contents(__DIR__ . "/../resources/hypejab-login/hypejab2fa.html");
         $response->getBody()->write($html);
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
+    }
+);
+
+$app->get(
+    '/jwt-protected-page', function(Request $request, Response $response) {
+        $token = $_COOKIE['jwt_token'];
+
+        if (!$token) {
+            $response->getBody()->write('<p>Access Denied - No token provided.</p>');
+            return $response->withHeader("content-type", "text/html")
+                        ->withStatus(404);
+        }
+
+        $key = 'my_secret_astra_key'; 
+
+        try {
+            $decoded = JWT::decode($token, $key, array('HS256'));
+            $response->getBody()->write('<p>Access Granted. Decoded Data:' + $decoded + "</p>");
+            return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+        } catch (Exception $e) {
+            $response->getBody()->write('<p>Access Denied. Exception arised : ' + $e + "</p>");
+            return $response->withHeader("content-type", "text/html")
+                        ->withStatus(501);
+        }
     }
 );
 
@@ -229,3 +270,25 @@ $app->post(
                         ->withStatus(200);
     }
 );
+
+$app->post(
+    '/loginVerifyJWT', function (Request $request, Response $response) {
+
+    if ($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') {
+        $key = 'my_secret_astra_key'; 
+        $tokenData = [
+            "user_id" => 123,
+            "username" => "exampleuser",
+            "panCard" => "AKYSG1973G"
+        ];
+
+        $token = JWT::encode($tokenData, $key, array('HS256'));
+        setcookie('jwt_token', $token, time() + 3600, '/');
+        header("Location: /jwt-protected-page");
+        exit;
+    } else {
+        http_response_code(401);
+        echo json_encode(["message" => "Access denied."]);
+        exit;
+    }
+});
