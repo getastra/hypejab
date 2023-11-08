@@ -98,6 +98,7 @@ require __DIR__ . '/../src/app/vulnerabilities/unverifiedEmailChange.php';
 require __DIR__ . '/../src/app/vulnerabilities/passwordShowedInResponse.php';
 require __DIR__ . '/../src/app/vulnerabilities/aiApiKey.php';
 require __DIR__ . '/../src/app/vulnerabilities/packageJson.php';
+require __DIR__ . '/../src/app/vulnerabilities/forgotpassword.php';
 
 
 // False positives section

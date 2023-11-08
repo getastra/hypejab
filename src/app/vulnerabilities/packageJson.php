@@ -10,7 +10,11 @@ $app->get('/package.json', function (Request $request, Response $response) {
         'version' => '1.0.0',
         'description' => 'Description of your package',
         'author' => 'Your Name',
-        
+        'dependencies'=> [
+            'fake-dependency-astra' => '2.0.1',
+            'http-server' => '^14.1.1',
+            'express'=> '^4.18.2',
+        ]
     ];
 
     // Convert the PHP array to a JSON string
