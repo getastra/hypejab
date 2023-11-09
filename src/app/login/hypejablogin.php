@@ -4,6 +4,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
 $app->get(
     '/hypejablogin',
@@ -106,30 +107,28 @@ $app->get(
     }
 );
 
-$app->get(
-    '/jwt-protected-page', function(Request $request, Response $response) {
-        $token = $_COOKIE['jwt_token'];
+$app->get('/jwt-protected-page', function(Request $request, Response $response) {
+    $token = $_COOKIE['jwt_token'];
 
-        if (!$token) {
-            $response->getBody()->write('<p>Access Denied - No token provided.</p>');
-            return $response->withHeader("content-type", "text/html")
-                        ->withStatus(404);
-        }
-
-        $key = 'my_secret_astra_key'; 
-
-        try {
-            $decoded = JWT::decode($token, $key, array('HS256'));
-            $response->getBody()->write('<p>Access Granted. Decoded Data:' + $decoded + "</p>");
-            return $response->withHeader("content-type", "text/html")
-                        ->withStatus(200);
-        } catch (Exception $e) {
-            $response->getBody()->write('<p>Access Denied. Exception arised : ' + $e + "</p>");
-            return $response->withHeader("content-type", "text/html")
-                        ->withStatus(501);
-        }
+    if (!$token) {
+        $response->getBody()->write('<p>Access Denied - No token provided.</p>');
+        return $response->withHeader("content-type", "text/html")
+            ->withStatus(404);
     }
-);
+
+    $key = 'my_secret_astra_key';
+
+    try {
+        $decoded = JWT::decode($token, new Key($key, 'HS256'));
+        $response->getBody()->write('<p>Access Granted. Decoded Data: ' . json_encode($decoded) . '</p>');
+        return $response->withHeader("content-type", "text/html")
+            ->withStatus(200);
+    } catch (Exception $e) {
+        $response->getBody()->write('<p>Access Denied. Exception arised : ' . $e->getMessage() . '</p>');
+        return $response->withHeader("content-type", "text/html")
+            ->withStatus(501);
+    }
+});
 
 $app->post(
     '/hypejabloginpassword',
@@ -282,7 +281,7 @@ $app->post(
             "panCard" => "AKYSG1973G"
         ];
 
-        $token = JWT::encode($tokenData, $key, array('HS256'));
+        $token = JWT::encode($tokenData, $key, 'HS256');
         setcookie('jwt_token', $token, time() + 3600, '/');
         header("Location: /jwt-protected-page");
         exit;
