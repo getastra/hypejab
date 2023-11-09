@@ -8,6 +8,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+- Updated attacks for 403 bypass.
+
+### Added
+- Reflected XSS false negative.
+
 ## [0.0.8] - 2023-09-14
 ### Added 
 - 2FA Bypass Vulnerability  
