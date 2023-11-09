@@ -106,6 +106,9 @@ require __DIR__ . '/../src/app/vulnerabilities/FP/xpoweredbyHeader.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/dangerousJsFunctions.php';
 require __DIR__ . '/../src/app/vulnerabilities/FP/retrievedFromCache.php';
 
+// False negatives section
+require __DIR__ . '/../src/app/vulnerabilities/FN/reflectedXssFalseNegative.php';
+
 // Define Custom Error Handler
 $customErrorHandler = function (
     ServerRequestInterface $request,
