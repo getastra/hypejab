@@ -94,11 +94,15 @@ require __DIR__ . '/../src/app/vulnerabilities/pathTraversalInApiRoute.php';
 require __DIR__ . '/../src/app/vulnerabilities/httpVerbTempering.php';
 require __DIR__ . '/../src/app/vulnerabilities/fileUpload.php';
 require __DIR__ . '/../src/app/vulnerabilities/serializedData.php';
+<<<<<<< Updated upstream
 require __DIR__ . '/../src/app/vulnerabilities/unverifiedEmailChange.php';
 require __DIR__ . '/../src/app/vulnerabilities/passwordShowedInResponse.php';
 require __DIR__ . '/../src/app/vulnerabilities/aiApiKey.php';
 require __DIR__ . '/../src/app/vulnerabilities/packageJson.php';
 require __DIR__ . '/../src/app/vulnerabilities/forgotpassword.php';
+=======
+require __DIR__ . '/../src/app/vulnerabilities/sqlInjection.php';
+>>>>>>> Stashed changes
 
 
 // False positives section
