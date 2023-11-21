@@ -21,7 +21,7 @@ $app->get(
         Maestro Card = 6759 6498 2643 8453<br>
         Master Card = 5425 2334 3010 9903<br>
         Visa Card = 4263 9826 4026 9299<br>
-        Rupay Card = 6521 6521 6521 6521<br>
+        Rupay Card = 6090 4027 8684 5731<br>
         Password = heisenberg<br>
         Passport Number = A1234567<br>
         Driving License Number = DL-0420110149646<br>
