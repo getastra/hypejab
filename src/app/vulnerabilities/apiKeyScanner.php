@@ -22,20 +22,16 @@ $app->get(
         Master Card = 5555 5555 5555 4444<br>
         Visa Card = 4111 1111 1111 1111<br>
         Rupay Card = 6521 6521 6521 6521<br>
-        Password = 12345678<br>
-        Religion = Hindu<br>
-        Sexual Orientation <br>
-        Racial Background <br>
+        Password = heisenberg<br>
         Passport Number = A1234567<br>
         Driving License Number = DL-0420110149646<br>
         Vehicle Registration Number = DL-0420110149646<br>
         SSN = 078-05-1120<br>
         IBAN = DE89 3704 0044 0532 0130 00<br>
-        Username = admin<br>
-        Email = admin@gmail.com<br>
+        Username = say+my+name@bb.com<br>
+        Email = say+my+name@bb.com<br>
         Personal-Information = 1234567890<br>
-        JWT token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0Ijox <br>
-
+        JWT token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c <br>
         </p>');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
