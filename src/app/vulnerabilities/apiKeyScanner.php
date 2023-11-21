@@ -16,11 +16,11 @@ $app->get(
         JitPack Authentication Token = jp_hjhggfhgfvdbhfsdhg32<br>
         American Express Card = 3782 822463 10005<br>
         Diners Club Card = 3056 9309 0259 04<br>
-        Discover Card = 6011 1111 1111 1117<br>
-        JCB Card = 3530 1113 3330 0000<br>
+        Discover Card = 6011 0009 9130 0009<br>
+        JCB Card = 3566 0000 2000 0410<br>
         Maestro Card = 6759 6498 2643 8453<br>
-        Master Card = 5555 5555 5555 4444<br>
-        Visa Card = 4111 1111 1111 1111<br>
+        Master Card = 5425 2334 3010 9903<br>
+        Visa Card = 4263 9826 4026 9299<br>
         Rupay Card = 6521 6521 6521 6521<br>
         Password = heisenberg<br>
         Passport Number = A1234567<br>
@@ -30,7 +30,7 @@ $app->get(
         IBAN = DE89 3704 0044 0532 0130 00<br>
         Username = say+my+name@bb.com<br>
         Email = say+my+name@bb.com<br>
-        Personal-Information = 1234567890<br>
+        Personal-Information = Location: Delhi -110011<br>
         JWT token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c <br>
         </p>');
         return $response->withHeader("content-type", "text/html")
