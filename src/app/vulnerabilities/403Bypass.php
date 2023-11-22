@@ -8,8 +8,13 @@ $app->get(
     '/403-bypass',
     function (Request $request, Response $response) {
         require __DIR__ . '/../login/checkSession.php';
+        $forwardedHeader = $request->getHeaderLine('X-Forwarded-For');
         $header = $request->getHeaderLine('X-Forwarded-Host');
         if ($header == '127.0.0.1') {
+            $response->getBody()->write('Hemlo Hecker');
+            return $response->withHeader("content-type", "text/html")
+                            ->withStatus(200);
+        } else if ($forwardedHeader == '127.0.0.1') {
             $response->getBody()->write('Hemlo Hecker');
             return $response->withHeader("content-type", "text/html")
                             ->withStatus(200);

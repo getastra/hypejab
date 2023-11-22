@@ -8,6 +8,19 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] - 2023-11-09
+### Changed
+- Updated attacks for 403 bypass.
+
+### Added
+- Api key exposed in response body. 
+- Password stored as plain text 
+- JWT based authentication 
+- Forgot Password Enumeration 
+- Unverified Email change 
+- Package.json file exposed
+- Reflected XSS false negative.
+
 ## [0.0.8] - 2023-09-14
 ### Added 
 - 2FA Bypass Vulnerability  
