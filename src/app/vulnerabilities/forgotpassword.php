@@ -6,28 +6,37 @@ use Psr\Http\Server\RequestHandlerInterface;
 use Slim\Factory\AppFactory;
 
 $app->add(function (Request $request, RequestHandlerInterface $handler) {
-    global $storage;
+    
+    $storageFile = '/tmp/storage.txt';
+
     $maxRequests = 10;
 
     $ip = $_SERVER['REMOTE_ADDR'];
     $key = 'rate_limit:' . $ip;
 
+    // Load storage data from file
+    $storage = [];
+    if (file_exists($storageFile)) {
+        $storage = unserialize(file_get_contents($storageFile));
+    }
+
     if (!isset($storage[$key])) {
         $storage[$key] = 0;
     }
 
-    echo $ip;
-    echo $storage[$key];
+    $response = $handler->handle($request);
 
     if ($storage[$key] >= $maxRequests) {
+        $response->getBody()->write('Too many requests');
         return $response->withStatus(429)
-            ->withHeader('Content-Type', 'text/html')
-            ->write('Too Many Requests');
+            ->withHeader('Content-Type', 'text/html');
     }
 
     $storage[$key]++;
-    echo($storage[$key]);
-    $response = $handler->handle($request);
+    
+    // Save updated storage data to file
+    file_put_contents($storageFile, serialize($storage));
+
     return $response;
 });
 
@@ -53,7 +62,7 @@ $app->post(
             return $response->withHeader("content-type", "text/html")
                             ->withStatus(200);
         } else {
-            $response->getBody()->write('Wrong username or password.');
+            $response->getBody()->write('Wrong username');
             return $response->withHeader("content-type", "text/html")
                             ->withStatus(404);
         }
