@@ -2,7 +2,34 @@
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Server\RequestHandlerInterface;
 use Slim\Factory\AppFactory;
+
+$app->add(function (Request $request, RequestHandlerInterface $handler) {
+    global $storage;
+    $maxRequests = 10;
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $key = 'rate_limit:' . $ip;
+
+    if (!isset($storage[$key])) {
+        $storage[$key] = 0;
+    }
+
+    echo $ip;
+    echo $storage[$key];
+
+    if ($storage[$key] >= $maxRequests) {
+        return $response->withStatus(429)
+            ->withHeader('Content-Type', 'text/html')
+            ->write('Too Many Requests');
+    }
+
+    $storage[$key]++;
+    echo($storage[$key]);
+    $response = $handler->handle($request);
+    return $response;
+});
 
 $app->get('/forgot-password', function (Request $request, Response $response) {
     $response->getBody()->write('
