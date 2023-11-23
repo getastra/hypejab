@@ -5,6 +5,10 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Server\RequestHandlerInterface;
 use Slim\Factory\AppFactory;
 
+$checkProxyHeaders = true;
+$trustedProxies = ['10.0.0.1', '10.0.0.2'];
+$app->add(new RKA\Middleware\IpAddress($checkProxyHeaders, $trustedProxies));
+
 $app->get('/forgot-password', function (Request $request, Response $response) {
     $response->getBody()->write('
     <h1>Forgot Password</h1>
@@ -25,7 +29,8 @@ $app->post(
         $storageFile = '/tmp/storage.txt';
 
         $maxRequests = 10;
-        $ip = $_SERVER['REMOTE_ADDR'];
+        $ip = $request->getAttribute('ip_address');
+        echo "IP address: " . $ip . "\n";
         $key = 'rate_limit:' . $ip;
 
         // Load storage data from file
