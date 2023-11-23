@@ -13,6 +13,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Updated attacks for 403 bypass.
 
 ### Added
+- Bypassable Rate Limiting in Forgot Password
+- Broken Link Footer 
+- More PII in API Key Scanner
 - Api key exposed in response body. 
 - Password stored as plain text 
 - JWT based authentication 
