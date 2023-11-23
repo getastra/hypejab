@@ -30,7 +30,6 @@ $app->post(
 
         $maxRequests = 10;
         $ip = $request->getAttribute('ip_address');
-        echo "IP address: " . $ip . "\n";
         $key = 'rate_limit:' . $ip;
 
         // Load storage data from file
