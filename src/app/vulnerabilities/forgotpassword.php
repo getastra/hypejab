@@ -29,7 +29,12 @@ $app->post(
         $storageFile = '/tmp/storage.txt';
 
         $maxRequests = 10;
-        $ip = $request->getAttribute('ip_address');
+        
+        $ip = $request->getHeaderLine('http_cf_connecting_ip');
+        if (empty($ip)) {
+            $ip = $request->getAttribute('ip_address');
+        }
+        
         $key = 'rate_limit:' . $ip;
 
         // Load storage data from file
