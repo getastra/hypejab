@@ -3,7 +3,8 @@
         "slim/slim": "^4.8",
         "slim/psr7": "^1.4",
         "selective/basepath": "^2.0",
-        "firebase/php-jwt": "^6.9"
+        "firebase/php-jwt": "^6.9",
+        "akrabat/ip-address-middleware": "^2.1"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^195.0"

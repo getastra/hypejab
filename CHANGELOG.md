@@ -8,6 +8,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.2] - 2023-11-23
+### Added
+- Bypassable Rate Limiting in Forgot Password
+- Broken Link Footer 
+- More PII in API Key Scanner
+
 ## [0.1.0] - 2023-11-09
 ### Changed
 - Updated attacks for 403 bypass.

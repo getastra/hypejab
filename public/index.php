@@ -95,6 +95,7 @@ require __DIR__ . '/../src/app/vulnerabilities/httpVerbTempering.php';
 require __DIR__ . '/../src/app/vulnerabilities/fileUpload.php';
 require __DIR__ . '/../src/app/vulnerabilities/serializedData.php';
 require __DIR__ . '/../src/app/vulnerabilities/oldApiVulnerability.php';
+require __DIR__ . '/../src/app/vulnerabilities/brokenLinkFooter.php';
 require __DIR__ . '/../src/app/vulnerabilities/unverifiedEmailChange.php';
 require __DIR__ . '/../src/app/vulnerabilities/passwordShowedInResponse.php';
 require __DIR__ . '/../src/app/vulnerabilities/aiApiKey.php';

@@ -8,37 +8,18 @@ $app->get(
     '/403-bypass',
     function (Request $request, Response $response) {
         require __DIR__ . '/../login/checkSession.php';
-        $forwardedHeader = $request->getHeaderLine('X-Forwarded-For');
-        $header = $request->getHeaderLine('X-Forwarded-Host');
-        if ($header == '127.0.0.1') {
-            $response->getBody()->write('Hemlo Hecker');
-            return $response->withHeader("content-type", "text/html")
-                            ->withStatus(200);
-        } else if ($forwardedHeader == '127.0.0.1') {
-            $response->getBody()->write('Hemlo Hecker');
-            return $response->withHeader("content-type", "text/html")
-                            ->withStatus(200);
-        } else {
-            $response->getBody()->write('Forbidden' . $header);
-            return $response->withHeader("content-type", "text/html")
+        $response->getBody()->write('Forbidden page');
+        return $response->withHeader("content-type", "text/html")
                             ->withStatus(403);
-        }
     }
 );
 
-$app->post(
-    '/403-bypass',
+$app->get(
+    '/403-bypass/',
     function (Request $request, Response $response) {
         require __DIR__ . '/../login/checkSession.php';
-        $cl = $request->getHeaderLine('Content-Length');
-        if ($cl == '0') {
-            $response->getBody()->write('Hemlo Hecker');
-            return $response->withHeader("content-type", "text/html")
+        $response->getBody()->write('Hemlo Hecker');
+        return $response->withHeader("content-type", "text/html")
                             ->withStatus(200);
-        } else {
-            $response->getBody()->write('Forbidden');
-            return $response->withHeader("content-type", "text/html")
-                            ->withStatus(403);
-        }
     }
 );
