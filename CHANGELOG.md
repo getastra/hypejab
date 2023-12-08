@@ -8,7 +8,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [0.1.3] - 2023-12-01
+## [0.1.3] - 2023-12-08
 ### Added 
 - Add Old API vulnerability
 - Add docker registry exposed vulerability
