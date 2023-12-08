@@ -45,10 +45,3 @@ $app->get('/config/docker/v2/', function (Request $request, Response $response) 
     $response->getBody()->write($packageJson);
     return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
 });
-
-
-$app->get('/.svn/', function (Request $request, Response $response) {
-
-    $response->getBody()->write("This is a plain text");
-    return $response->withHeader('Content-Type', 'text/plain')->withStatus(200);
-});
