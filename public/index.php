@@ -102,6 +102,7 @@ require __DIR__ . '/../src/app/vulnerabilities/aiApiKey.php';
 require __DIR__ . '/../src/app/vulnerabilities/packageJson.php';
 require __DIR__ . '/../src/app/vulnerabilities/forgotpassword.php';
 require __DIR__ . '/../src/app/vulnerabilities/docker-registry-and-svn-exposed.php';
+require __DIR__ . '/../src/app/vulnerabilities/couchdb.php';
 
 
 // False positives section
