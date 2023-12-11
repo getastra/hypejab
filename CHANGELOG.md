@@ -8,6 +8,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.3] - 2023-12-08
+### Added 
+- Add Couch DB Vulnerability
+- Add Old API vulnerability
+- Add docker registry exposed vulerability
+
 ## [0.1.2] - 2023-11-23
 ### Added
 - Bypassable Rate Limiting in Forgot Password

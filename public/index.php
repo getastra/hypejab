@@ -94,12 +94,15 @@ require __DIR__ . '/../src/app/vulnerabilities/pathTraversalInApiRoute.php';
 require __DIR__ . '/../src/app/vulnerabilities/httpVerbTempering.php';
 require __DIR__ . '/../src/app/vulnerabilities/fileUpload.php';
 require __DIR__ . '/../src/app/vulnerabilities/serializedData.php';
+require __DIR__ . '/../src/app/vulnerabilities/oldApiVulnerability.php';
 require __DIR__ . '/../src/app/vulnerabilities/brokenLinkFooter.php';
 require __DIR__ . '/../src/app/vulnerabilities/unverifiedEmailChange.php';
 require __DIR__ . '/../src/app/vulnerabilities/passwordShowedInResponse.php';
 require __DIR__ . '/../src/app/vulnerabilities/aiApiKey.php';
 require __DIR__ . '/../src/app/vulnerabilities/packageJson.php';
 require __DIR__ . '/../src/app/vulnerabilities/forgotpassword.php';
+require __DIR__ . '/../src/app/vulnerabilities/docker-registry-and-svn-exposed.php';
+require __DIR__ . '/../src/app/vulnerabilities/couchdb.php';
 
 
 // False positives section
