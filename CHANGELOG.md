@@ -8,6 +8,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- Added Json Reflection Vulnerability
+
 ## [0.1.3] - 2023-12-08
 ### Added 
 - Add Couch DB Vulnerability
