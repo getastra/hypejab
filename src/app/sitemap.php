@@ -25,6 +25,9 @@ $app->get(
                 ->getHost().($request->getUri()->getHost() == "localhost" ? ':'
                 .$request->getUri()->getPort() : '');
         foreach ($routes as $route) {
+            if (str_contains($route, 'administrator')){
+                continue;
+            }
             $sitemap .= '<url>'.PHP_EOL;
             $sitemap .= '    <loc>'.$baseurl.$route.'</loc>'.PHP_EOL;
             $sitemap .= '</url>'.PHP_EOL;
