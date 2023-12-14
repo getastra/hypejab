@@ -7,6 +7,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+### Added
+- Added Session Token false positive and true positive
 
 ## [0.1.0] - 2023-11-09
 ### Changed
