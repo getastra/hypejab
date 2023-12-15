@@ -7,6 +7,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+### Added
+- Session Token false positive and true positive
 
 ### Added
 - Added Json Reflection Vulnerability
