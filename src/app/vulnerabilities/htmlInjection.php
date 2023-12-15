@@ -16,11 +16,10 @@ $app->get(
 $app->get(
     '/html-injection',
     function (Request $request, Response $response) {
-        $value = isset($_GET['search'])?$_GET['search']:"";
-        if (!str_contains($value,'<h1>Astra')){
-            if (str_contains($value, '~!@#$%^&*()_+<>:"{}\\//')) {
-                $value="denied";
-            }
+        $value = isset($_GET['search'])?urldecode($_GET['search']):"";
+        // echo preg_match('/[^a-zA-Z\d]/', $value);
+        if (preg_match('/[^a-zA-Z\d]/', $value) && !str_contains($value,'<h1>Astra')) {
+            $value="denied";
         }
         $response->getBody()->write("Html Injection: ".$value);
         return $response->withHeader("content-type", "text/html")
