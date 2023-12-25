@@ -104,6 +104,8 @@ require __DIR__ . '/../src/app/vulnerabilities/forgotpassword.php';
 require __DIR__ . '/../src/app/vulnerabilities/docker-registry-and-svn-exposed.php';
 require __DIR__ . '/../src/app/vulnerabilities/couchdb.php';
 require __DIR__ . '/../src/app/vulnerabilities/json-reflection.php';
+require __DIR__ . '/../src/app/vulnerabilities/sleepPayload.php';
+
 
 
 // False positives section
