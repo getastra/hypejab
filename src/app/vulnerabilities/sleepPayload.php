@@ -5,6 +5,16 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
+    '/sleep?search=a',
+    function (Request $request, Response $response, array $args) {
+        $response->getBody()->write('
+        sleep');
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
     '/sleep',
     function (Request $request, Response $response, $args) {
         $query = '';
