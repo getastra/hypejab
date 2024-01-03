@@ -7,6 +7,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+### Added
+- Sleep payload vulnerability
+- Session Token false positive and true positive
 
 ### Added
 - Added Json Reflection Vulnerability

@@ -106,6 +106,8 @@ require __DIR__ . '/../src/app/vulnerabilities/couchdb.php';
 require __DIR__ . '/../src/app/vulnerabilities/json-reflection.php';
 require __DIR__ . '/../src/app/vulnerabilities/forFuzzer.php';
 require __DIR__ . '/../src/app/vulnerabilities/htmlInjection.php';
+require __DIR__ . '/../src/app/vulnerabilities/sleepPayload.php';
+
 
 
 // False positives section
