@@ -180,10 +180,21 @@ $app->post(
     function (Request $request, Response $response) {
         if (($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') || ($_POST['username'] == 'say+my+name+admin@bb.com' && $_POST['password'] == 'heisenberg')) {
             session_start();
-            $_SESSION['user'] = 'Heisenberg';
+            if ($_POST['username'] == 'say+my+name+admin@bb.com'){
+                $_SESSION['user'] = 'Admin';
+            } else {
+                $_SESSION['user'] = 'Heisenberg';
+            }
             $_SESSION['start'] = time();
             $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
-            header("Location: /loginPoll");
+
+            if ($_POST['username'] == 'say+my+name+admin@bb.com'){
+                header("Location: /loginPollAdmin");
+            } else {
+                header("Location: /loginPoll");
+            }
+            
+            
             die();
         } else {
             $response->getBody()->write('Wrong username or password.');
