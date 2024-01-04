@@ -178,7 +178,7 @@ $app->post(
 $app->post(
     '/loginVerify',
     function (Request $request, Response $response) {
-        if ($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') {
+        if (($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') || ($_POST['username'] == 'say+my+name+admin@bb.com' && $_POST['password'] == 'heisenberg')) {
             session_start();
             $_SESSION['user'] = 'Heisenberg';
             $_SESSION['start'] = time();

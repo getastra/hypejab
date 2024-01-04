@@ -10,6 +10,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 - Sleep payload vulnerability
 - Session Token false positive and true positive
+- Admin username added.
 
 ### Added
 - Added Json Reflection Vulnerability
