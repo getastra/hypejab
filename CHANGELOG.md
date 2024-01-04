@@ -11,9 +11,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Sleep payload vulnerability
 - Session Token false positive and true positive
 - Admin username added.
-
-### Added
 - Added Json Reflection Vulnerability
+- `/loginPollAdmin`, ideally this should not be accessible by normal user, but it is accessible.
 
 ## [0.1.3] - 2023-12-08
 ### Added 
