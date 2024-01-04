@@ -25,7 +25,7 @@ $app->get(
                 ->getHost().($request->getUri()->getHost() == "localhost" ? ':'
                 .$request->getUri()->getPort() : '');
         foreach ($routes as $route) {
-            if (str_contains($route, 'administrator')){
+            if (str_contains($route, 'administrator') || str_contains($route, 'loginPoll')){
                 continue;
             }
             $sitemap .= '<url>'.PHP_EOL;
