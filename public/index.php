@@ -108,6 +108,7 @@ require __DIR__ . '/../src/app/vulnerabilities/forFuzzer.php';
 require __DIR__ . '/../src/app/vulnerabilities/htmlInjection.php';
 require __DIR__ . '/../src/app/vulnerabilities/sleepPayload.php';
 require __DIR__ . '/../src/app/vulnerabilities/sessionToken.php';
+require __DIR__ . '/../src/app/vulnerabilities/git-exposed.php';
 
 
 
