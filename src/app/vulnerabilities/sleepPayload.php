@@ -18,6 +18,7 @@ $app->get(
     '/sleep',
     function (Request $request, Response $response, $args) {
         $query = '';
+        $userAgent = $request->getHeaderLine('User-Agent');
         if (isset($request->getQueryParams()['search'])) {
             $query = urldecode($request->getQueryParams()['search']);
         } else {
@@ -31,10 +32,18 @@ $app->get(
 
             $sleepTime = intval($matches[1]);
             sleep($sleepTime);
+        } elseif (strpos($userAgent, 'sleep') !== false) { // meant for shellshock detection
+            $regex = '/(?<=sleep)[\s\W]?(\d+)/';
+            $matches = [];
+            preg_match($regex, $userAgent, $matches);
+
+            $sleepTime = intval($matches[1]);
+            sleep($sleepTime);
         }
 
         $data = [
             'search' => $query,
+            'User-Agent' => $userAgent,
         ];
     
         $json = json_encode($data, JSON_PRETTY_PRINT);
