@@ -110,6 +110,7 @@ require __DIR__ . '/../src/app/vulnerabilities/sleepPayload.php';
 require __DIR__ . '/../src/app/vulnerabilities/sessionToken.php';
 require __DIR__ . '/../src/app/vulnerabilities/git-exposed.php';
 require __DIR__ . '/../src/app/vulnerabilities/emailLeaks.php';
+require __DIR__ . '/../src/app/vulnerabilities/IDOR.php';
 
 
 
