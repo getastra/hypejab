@@ -30,13 +30,28 @@
 				<div class="text-center">
 					<img id="profile-img" class="rounded-circle profile-img-card" src="https://i.imgur.com/6b6psnA.png" />
 					<p id="profile-name" class="profile-name-card"></p>
-					<form action="2faVerify" method="POST" class="form-signin">
-                        <input type="text" name="twofactor" placeholder="Enter 2FA code" required>
-                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">enter</button>
-					</form>
+						<p id="error"></p>
+                        <input type="text" id="otp" name="twofactor" placeholder="Enter 2FA code" required>
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" onclick=submitForm()>enter</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
+<script>
+	function submitForm() {
+		otp = document.getElementById("otp").value;
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", "2faVerify", true);
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		xhr.send(JSON.stringify({'email':'say+my+name@bb.com',otp: otp}));
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				window.location.href = "loginPoll";
+			} else {
+				document.getElementById("error").innerHTML = "Invalid 2FA code";
+			}
+		}
+	}
+</script>
 </html>
