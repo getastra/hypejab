@@ -104,7 +104,14 @@ require __DIR__ . '/../src/app/vulnerabilities/forgotpassword.php';
 require __DIR__ . '/../src/app/vulnerabilities/docker-registry-and-svn-exposed.php';
 require __DIR__ . '/../src/app/vulnerabilities/couchdb.php';
 require __DIR__ . '/../src/app/vulnerabilities/json-reflection.php';
+require __DIR__ . '/../src/app/vulnerabilities/forFuzzer.php';
+require __DIR__ . '/../src/app/vulnerabilities/htmlInjection.php';
 require __DIR__ . '/../src/app/vulnerabilities/sleepPayload.php';
+require __DIR__ . '/../src/app/vulnerabilities/sessionToken.php';
+require __DIR__ . '/../src/app/vulnerabilities/git-exposed.php';
+require __DIR__ . '/../src/app/vulnerabilities/emailLeaks.php';
+require __DIR__ . '/../src/app/vulnerabilities/IDOR.php';
+require __DIR__ . '/../src/app/vulnerabilities/source-disclosure.php';
 
 
 

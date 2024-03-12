@@ -100,6 +100,11 @@ $app->get(
 $app->get(
     '/hypejablogin2fa',
     function (Request $request, Response $response) {
+        session_start();
+        if (!isset($_SESSION['user'])) {
+            header("Location: /");
+            die();
+        }
         $html = file_get_contents(__DIR__ . "/../resources/hypejab-login/hypejab2fa.html");
         $response->getBody()->write($html);
         return $response->withHeader("content-type", "text/html")
@@ -178,12 +183,23 @@ $app->post(
 $app->post(
     '/loginVerify',
     function (Request $request, Response $response) {
-        if ($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') {
+        if (($_POST['username'] == 'say+my+name@bb.com' && $_POST['password'] == 'heisenberg') || ($_POST['username'] == 'say+my+name+admin@bb.com' && $_POST['password'] == 'heisenberg')) {
             session_start();
-            $_SESSION['user'] = 'Heisenberg';
+            if ($_POST['username'] == 'say+my+name+admin@bb.com'){
+                $_SESSION['user'] = 'Admin';
+            } else {
+                $_SESSION['user'] = 'Heisenberg';
+            }
             $_SESSION['start'] = time();
             $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
-            header("Location: /loginPoll");
+
+            if ($_POST['username'] == 'say+my+name+admin@bb.com'){
+                header("Location: /loginPollAdmin");
+            } else {
+                header("Location: /loginPoll");
+            }
+            
+            
             die();
         } else {
             $response->getBody()->write('Wrong username or password.');
@@ -247,26 +263,45 @@ $app->post(
     function (Request $request, Response $response) {
         session_start();
 
-        if (isset($_SESSION['user'])) {
-            header("Location: /loginPoll");
-            die();
-        }
-
-        $twoFactor = $_POST['twofactor'];
-
-        if ($twoFactor == '123456') {
-            // Check the 2FA code
-            $_SESSION['user'] = 'Heisenberg';
-            $_SESSION['start'] = time();
-            $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
-            header("Location: /loginPoll");
-            die();
+        $_body = $request->getBody();
+        
+        if(!empty($_body)){
+            $_obj = json_decode($_body, FALSE);
+            $_otp = $_obj->otp;
+            //echo $_otp;
+            $status  = 200;
+            if(isset($_otp)){
+                if (is_string($_otp) && $_otp == '123456') {
+                    $resp = [
+                        'success' => true
+                    ];
+                } else if (is_array($_otp) && in_array('123456', $_otp)) {
+                    $resp = [
+                        'success' => true
+                    ];
+                } else {
+                    $resp = [
+                        'success' => false
+                    ];
+                    $status = 401;
+                }
+                
+                $response->getBody()->write(json_encode($resp, JSON_PRETTY_PRINT));
+                return $response->withHeader("content-type", "application/json")
+                                ->withStatus($status);
+            }
+            else{
+                $resp = [
+                    'success' => false
+                ];
+                $response->getBody()->write(json_encode($resp, JSON_PRETTY_PRINT));
+                return $response->withHeader("content-type", "application/json")
+                                ->withStatus(401);
+            }
         } else {
-            $response->getBody()->write('Wrong 2FA code.');
+            $response->getBody()->write('{"error":" Bad request"}');
+            return $response->withStatus(400);
         }
-
-        return $response->withHeader("content-type", "text/html")
-                        ->withStatus(200);
     }
 );
 

@@ -5,18 +5,20 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/fp/session',
+    '/session?phpsessid=1234567890',
     function (Request $request, Response $response) {
-        $response->getBody()->write('<p>Session token False Positive</p>');
+        require __DIR__ . '/../login/checkSession.php';
+        $response->getBody()->write('<p>some session ID</p>');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
     }
 );
 
 $app->get(
-    '/temp?auth=1234567890',
+    '/session',
     function (Request $request, Response $response) {
-        $response->getBody()->write('<p>Session token True Positive</p>');
+        require __DIR__ . '/../login/checkSession.php';
+        $response->getBody()->write('<p>some session ID</p>');
         return $response->withHeader("content-type", "text/html")
                         ->withStatus(200);
     }
