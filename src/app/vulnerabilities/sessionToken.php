@@ -5,7 +5,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
 $app->get(
-    '/session?phpsessid=1234567890',
+    '/session?phpsessid=1234567890&email=say+my+name@bb.com',
     function (Request $request, Response $response) {
         require __DIR__ . '/../login/checkSession.php';
         $response->getBody()->write('<p>some session ID</p>');
