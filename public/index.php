@@ -112,6 +112,7 @@ require __DIR__ . '/../src/app/vulnerabilities/git-exposed.php';
 require __DIR__ . '/../src/app/vulnerabilities/emailLeaks.php';
 require __DIR__ . '/../src/app/vulnerabilities/IDOR.php';
 require __DIR__ . '/../src/app/vulnerabilities/source-disclosure.php';
+require __DIR__ . '/../src/app/vulnerabilities/info-disclosure.php';
 
 
 
