@@ -40,6 +40,15 @@ $app->get(
               </div>
             </nav>
 <h1 style="text-align:center;">Welcome! '.$_SESSION['user'].'</h1>
+<script>
+  fetch("/graphql", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({"name": "Akshat", "age": 29})
+  }).then(response => response.json())
+    .then(data => console.log("Response:", data))
+    .catch(error => console.error("Error:", error));
+</script>
 <img src="https://c.tenor.com/g2IzuWs8bpEAAAAC/breaking-bad-walter-white.gif" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
 ');
             return $response->withHeader("content-type", "text/html")
@@ -119,6 +128,15 @@ $app->get(
             </div>
           </nav>
 <h1 style="text-align:center;">Welcome! '.$_SESSION['user'].'</h1>
+<script>
+  fetch("/graphql", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({"fetch": "secrets", "count": 3})
+  }).then(response => response.json())
+    .then(data => console.log("Response:", data))
+    .catch(error => console.error("Error:", error));
+</script>
 <iframe src="https://giphy.com/embed/11shDO8NnZDYpa" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 ');
           return $response->withHeader("content-type", "text/html")
