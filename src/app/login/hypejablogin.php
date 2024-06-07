@@ -98,6 +98,21 @@ $app->get(
 );
 
 $app->get(
+    '/hypejablogin6',
+    function (Request $request, Response $response) {
+        session_start();
+        if (isset($_SESSION['user'])) {
+            header("Location: /loginPoll");
+            die();
+        }
+        $html = file_get_contents(__DIR__ . "/../resources/hypejab-login/hypejablogin6.html");
+        $response->getBody()->write($html);
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
     '/hypejablogin2fa',
     function (Request $request, Response $response) {
         session_start();
@@ -326,3 +341,33 @@ $app->post(
         exit;
     }
 });
+
+$app->post(
+    '/loginVerify6',
+    function (Request $request, Response $response) {
+        session_start();
+
+        if (isset($_SESSION['user'])) {
+            header("Location: /loginPoll");
+            die();
+        }
+
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if ($username == 'say+my+name@bb.com' && $password == 'heisenberg') {
+            // Check the 2FA code
+            $_SESSION['user'] = 'Heisenberg';
+            $_SESSION['redirect'] = true;
+            $_SESSION['start'] = time();
+            $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+            header("Location: /session?phpsessid=1234567890");
+            die();
+        } else {
+            $response->getBody()->write('Wrong username or password.');
+        }
+
+        return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
