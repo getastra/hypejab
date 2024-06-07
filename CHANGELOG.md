@@ -13,6 +13,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Admin username added.
 - Added Json Reflection Vulnerability
 - `/loginPollAdmin`, ideally this should not be accessible by normal user, but it is accessible.
+- Added new login page for session token in url
+- Added new page for information-disclosure in GET.
 
 ## [0.1.3] - 2023-12-08
 ### Added 
