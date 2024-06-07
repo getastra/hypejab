@@ -112,7 +112,7 @@ require __DIR__ . '/../src/app/vulnerabilities/git-exposed.php';
 require __DIR__ . '/../src/app/vulnerabilities/emailLeaks.php';
 require __DIR__ . '/../src/app/vulnerabilities/IDOR.php';
 require __DIR__ . '/../src/app/vulnerabilities/source-disclosure.php';
-
+require __DIR__ . '/../src/app/vulnerabilities/mass-assignment.php';
 
 
 // False positives section
