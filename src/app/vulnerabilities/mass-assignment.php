@@ -8,7 +8,7 @@ $app->get('/mass-assignment-form', function (Request $request, Response $respons
     require __DIR__ . '/../login/checkSession.php';
     $_SESSION['data'] = [
         "name" => "mass-assignment",
-        "admin" => "false",
+        "admin" => false,
         "role" => "user"
     ];
     $html = file_get_contents(__DIR__ . "/../resources/mass-assignment.html");
@@ -23,7 +23,7 @@ $app->get('/mass-assignment', function (Request $request, Response $response) us
     if (!isset($_SESSION['data'])) {
         $_SESSION['data'] = [
             "name" => "mass-assignment",
-            "admin" => "false",
+            "admin" => false,
             "role" => "user"
         ];
     }
