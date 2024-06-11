@@ -15,6 +15,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `/loginPollAdmin`, ideally this should not be accessible by normal user, but it is accessible.
 - Added new login page for session token in url
 - Added new page for information-disclosure in GET.
+- Added new page for mass-assignment
 
 ## [0.1.3] - 2023-12-08
 ### Added 
