@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mass Assignment</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="username" placeholder="Enter username" required>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">enter</button>
+        </form>
+    </body>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.querySelector('input[name="username"]').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "mass-assignment", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({'username': username}));
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    console.log('User created successfully');
+                    //alert('User created successfully');
+                } else {
+                    console.log('User creation failed');
+                    //alert('User creation failed');
+                }
+            }
+        });
+    </script>
+</html>
