@@ -20,3 +20,10 @@ $app->post('/public-endpoint', function (Request $request, Response $response) {
     return $response->withHeader("content-type", "text/html")
                     ->withStatus(200);
 });
+
+$app->options('/public-enpoint', function (Request $request, Response $response) {
+    $response->getBody()->write('');
+    return $response->withHeader("content-type", "text/html")
+                    ->withHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+                    ->withStatus(200);
+});
