@@ -41,6 +41,35 @@ $app->get(
             </nav>
 <h1 style="text-align:center;">Welcome! '.$_SESSION['user'].'</h1>
 <img src="https://c.tenor.com/g2IzuWs8bpEAAAAC/breaking-bad-walter-white.gif" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<script>
+// Create a new XMLHttpRequest object
+var xhr = new XMLHttpRequest();
+
+xhr.open(\'GET\', \'loginPoll\', true);
+
+// Set the Authorization header
+xhr.setRequestHeader(\'Authorization\', \'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\');
+
+// Set up a function to handle the response
+xhr.onload = function() {
+    if (xhr.status >= 200 && xhr.status < 300) {
+        // Success! Handle the response
+        console.log(\'Response:\', xhr.responseText);
+    } else {
+        // Handle the error
+        console.error(\'Request failed. Status:\', xhr.status, \'Response:\', xhr.responseText);
+    }
+};
+
+// Set up a function to handle any errors that occur
+xhr.onerror = function() {
+    console.error(\'Request failed\');
+};
+
+// Send the request
+xhr.send();
+
+</script>
 ');
             return $response->withHeader("content-type", "text/html")
                             ->withStatus(200);
