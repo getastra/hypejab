@@ -54,7 +54,7 @@ require __DIR__ . '/../src/app/vulnerabilities/log4jRce.php';
 require __DIR__ . '/../src/app/vulnerabilities/xpoweredbyHeader.php';
 require __DIR__ . '/../src/app/vulnerabilities/dangerousJsFunctions.php';
 require __DIR__ . '/../src/app/vulnerabilities/wpeprivateConfigInfoDisclosure.php';
-require __DIR__ . '/../src/app/vulnerabilities/bazaarRepository.php';
+// require __DIR__ . '/../src/app/vulnerabilities/bazaarRepository.php';
 require __DIR__ . '/../src/app/vulnerabilities/serverSideTemplateInjection.php';
 require __DIR__ . '/../src/app/vulnerabilities/sqliAuthBypass.php';
 require __DIR__ . '/../src/app/vulnerabilities/forcedBrowsingAuthBypass.php';
