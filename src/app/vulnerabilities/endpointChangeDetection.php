@@ -8,7 +8,7 @@ $app->get(
     '/endpoint-change-detection',
     function (Request $request, Response $response) {
         $data = [
-            'master_card' => $request->getHeaderLine('X-DELTA-TESTING') ? true : '5425 2334 3010 9903',
+            'master_card' => $request->getHeaderLine('X-DELTA-TESTING') ? '5425 2334 3010 9903' : true,
         ];
 
         $response->getBody()->write(json_encode($data, JSON_PRETTY_PRINT));
