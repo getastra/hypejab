@@ -137,10 +137,23 @@ $app->get('/jwt-protected-page', function(Request $request, Response $response) 
     }
 
     $key = 'my_secret_astra_key';
+    $tokenData = [
+        "user_id" => 123,
+        "username" => "exampleuser",
+        "scope" => "limited"
+    ];
+
+    $actualToken = [
+        "user_id" => 123,
+        "username" => "exampleuser",
+        "panCard" => "AKYSG1973G"
+    ];
+
+    $bodytoken = JWT::encode($tokenData, $key, 'HS256');
 
     try {
         $decoded = JWT::decode($token, new Key($key, 'HS256'));
-        $response->getBody()->write('<p>Access Granted. Decoded Data: ' . json_encode($decoded) . '</p>');
+        $response->getBody()->write('<h3>'.$bodytoken.'</h3><p>Access Granted. Decoded Data: ' . json_encode($actualToken) . '</p>');
         return $response->withHeader("content-type", "text/html")
             ->withStatus(200);
     } catch (Exception $e) {
