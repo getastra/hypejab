@@ -33,6 +33,7 @@ require __DIR__ . '/../src/app/vulnerabilities/magentoDownloader.php';
 require __DIR__ . '/../src/app/vulnerabilities/swaggerConfigFile.php';
 require __DIR__ . '/../src/app/vulnerabilities/awstatsScript.php';
 require __DIR__ . '/../src/app/vulnerabilities/apiKeyScanner.php';
+require __DIR__ . '/../src/app/vulnerabilities/endpointChangeDetection.php';
 require __DIR__ . '/../src/app/vulnerabilities/databaseConnectionString.php';
 require __DIR__ . '/../src/app/vulnerabilities/mysqlUsernameDisclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/wpMediaEnum.php';
