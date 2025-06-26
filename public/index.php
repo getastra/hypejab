@@ -115,6 +115,8 @@ require __DIR__ . '/../src/app/vulnerabilities/IDOR.php';
 require __DIR__ . '/../src/app/vulnerabilities/source-disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/info-disclosure.php';
 require __DIR__ . '/../src/app/vulnerabilities/mass-assignment.php';
+require __DIR__ . '/../src/app/vulnerabilities/publicEndpoint.php';
+require __DIR__ . '/../src/app/vulnerabilities/basicresponsemanipulation.php';
 
 
 // False positives section
