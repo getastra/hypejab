@@ -50,6 +50,7 @@ $app->get(
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="/vulnerable-libraries">Libraries</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/hypejablogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
