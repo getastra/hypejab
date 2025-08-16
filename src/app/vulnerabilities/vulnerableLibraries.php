@@ -50,22 +50,22 @@ $app->get(
             <div class="col-md-6">
                 <h3>Direct Library URLs:</h3>
                 <ul>
-                    <li><a href="/jquery-1.8.3-vulnerable.js" target="_blank">jQuery 1.8.3</a></li>
-                    <li><a href="/prototype-vulnerable.js" target="_blank">Prototype.js</a></li>
-                    <li><a href="/underscore-1.13.0-vulnerable.js" target="_blank">Underscore.js</a></li>
-                    <li><a href="/lodash-vulnerable.js" target="_blank">Lodash</a></li>
-                    <li><a href="/requirejs-2.3.5-vulnerable.js" target="_blank">RequireJS</a></li>
+                    <li><a href="/resources/js/vulnerable/jquery-1.8.3.min.js" target="_blank">jQuery 1.8.3</a></li>
+                    <li><a href="/resources/js/vulnerable/prototype.js" target="_blank">Prototype.js</a></li>
+                    <li><a href="/resources/js/vulnerable/underscore-1.13.0.js" target="_blank">Underscore.js</a></li>
+                    <li><a href="/resources/js/vulnerable/lodash.js" target="_blank">Lodash</a></li>
+                    <li><a href="/resources/js/vulnerable/require-2.3.5.js" target="_blank">RequireJS</a></li>
                 </ul>
             </div>
         </div>
     </div>
     
     <!-- Load all vulnerable libraries -->
-    <script src="/jquery-1.8.3-vulnerable.js"></script>
-    <script src="/prototype-vulnerable.js"></script>
-    <script src="/underscore-1.13.0-vulnerable.js"></script>
-    <script src="/lodash-vulnerable.js"></script>
-    <script src="/requirejs-2.3.5-vulnerable.js"></script>
+    <script src="/resources/js/vulnerable/jquery-1.8.3.min.js"></script>
+    <script src="/resources/js/vulnerable/prototype.js"></script>
+    <script src="/resources/js/vulnerable/underscore-1.13.0.js"></script>
+    <script src="/resources/js/vulnerable/lodash.js"></script>
+    <script src="/resources/js/vulnerable/require-2.3.5.js"></script>
 </body>
 </html>';
         
@@ -77,7 +77,7 @@ $app->get(
 
 // Individual library endpoints - these will be automatically discovered by sitemap
 $app->get(
-    '/jquery-1.8.3-vulnerable',
+    '/jquery-1.8.3-vulnerable.js',
     function (Request $request, Response $response) {
         $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/jquery-1.8.3.min.js");
         $response->getBody()->write($jsContent);
@@ -87,7 +87,7 @@ $app->get(
 );
 
 $app->get(
-    '/prototype-vulnerable',
+    '/prototype-vulnerable.js',
     function (Request $request, Response $response) {
         $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/prototype.js");
         $response->getBody()->write($jsContent);
@@ -97,7 +97,7 @@ $app->get(
 );
 
 $app->get(
-    '/underscore-1.13.0-vulnerable',
+    '/underscore-1.13.0-vulnerable.js',
     function (Request $request, Response $response) {
         $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/underscore-1.13.0.js");
         $response->getBody()->write($jsContent);
@@ -107,7 +107,7 @@ $app->get(
 );
 
 $app->get(
-    '/lodash-vulnerable',
+    '/lodash-vulnerable.js',
     function (Request $request, Response $response) {
         $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/lodash.js");
         $response->getBody()->write($jsContent);
@@ -117,7 +117,7 @@ $app->get(
 );
 
 $app->get(
-    '/requirejs-2.3.5-vulnerable',
+    '/requirejs-2.3.5-vulnerable.js',
     function (Request $request, Response $response) {
         $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/require-2.3.5.js");
         $response->getBody()->write($jsContent);
