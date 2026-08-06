@@ -64,7 +64,6 @@ $app->get(
     <script src="/resources/js/vulnerable/jquery-1.8.3.min.js"></script>
     <script src="/resources/js/vulnerable/prototype.js"></script>
     <script src="/resources/js/vulnerable/underscore-1.13.0.js"></script>
-    <script src="/resources/js/vulnerable/underscore-1.13.0.min.js"></script>
     <script src="/resources/js/vulnerable/lodash.js"></script>
     <script src="/resources/js/vulnerable/require-2.3.5.js"></script>
 </body>
@@ -72,6 +71,57 @@ $app->get(
         
         $response->getBody()->write($html);
         return $response->withHeader("content-type", "text/html")
+                        ->withStatus(200);
+    }
+);
+
+// Individual library endpoints - these will be automatically discovered by sitemap
+$app->get(
+    '/jquery-1.8.3-vulnerable.js',
+    function (Request $request, Response $response) {
+        $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/jquery-1.8.3.min.js");
+        $response->getBody()->write($jsContent);
+        return $response->withHeader("content-type", "application/javascript")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
+    '/prototype-vulnerable.js',
+    function (Request $request, Response $response) {
+        $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/prototype.js");
+        $response->getBody()->write($jsContent);
+        return $response->withHeader("content-type", "application/javascript")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
+    '/underscore-1.13.0-vulnerable.js',
+    function (Request $request, Response $response) {
+        $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/underscore-1.13.0.js");
+        $response->getBody()->write($jsContent);
+        return $response->withHeader("content-type", "application/javascript")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
+    '/lodash-vulnerable.js',
+    function (Request $request, Response $response) {
+        $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/lodash.js");
+        $response->getBody()->write($jsContent);
+        return $response->withHeader("content-type", "application/javascript")
+                        ->withStatus(200);
+    }
+);
+
+$app->get(
+    '/requirejs-2.3.5-vulnerable.js',
+    function (Request $request, Response $response) {
+        $jsContent = file_get_contents(__DIR__ . "/../../public/resources/js/vulnerable/require-2.3.5.js");
+        $response->getBody()->write($jsContent);
+        return $response->withHeader("content-type", "application/javascript")
                         ->withStatus(200);
     }
 ); 
